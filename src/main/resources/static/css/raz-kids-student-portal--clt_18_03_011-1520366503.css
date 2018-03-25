@@ -1,0 +1,2438 @@
+/*------------------------------------*\
+	$Legend
+	$Portal
+	$Planet-Locations
+    $Ship-Wrapper
+    $Console-Buttons
+    $Progress-Chart
+    $Headsprout
+    $ReadyTest
+    $Writing
+    $Media-Queries
+    $Defunct (May or may not be in use)
+\*------------------------------------*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: #12224c;
+    font-family: verdana, arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+.resetContentBox { box-sizing: content-box; }
+
+.portalPage {
+	background: #102C50;
+}
+
+
+
+/*** $Portal ***/
+
+.missionContent, 
+.starZoneContent,
+.dashboardContent {
+	height: 100%;
+	margin: 0 auto;
+	max-width: 960px;
+	position: relative;
+	text-align: center;
+    top: 60px;
+	width: 100%;	
+}
+
+.missionContent > div,
+.starZoneContent > a,
+.starZoneContent > div {
+    cursor: pointer;
+    position: absolute;   
+}
+
+.missionContent .writingPortalBg > div {
+	position: relative;
+}
+
+.missionContent img { border: none; }
+
+.studentPortalBg { background: #102C50 url("/images/student_portal/studentPortalBg.jpg") no-repeat center top; }
+
+.readingPortalBg { background: #102C50 url("/images/student_portal/readingPortalBg.jpg") no-repeat center top; }
+
+.headsproutPortalBg { background: #102C50 url("/images/student_portal/headsproutPortalBg.jpg") no-repeat center top; }
+
+.sciencePortalBg { background: #102C50 url("/images/student_portal/sciencePortalBg.jpg") no-repeat center top; }
+
+.writingPortalBg { background: #102C50 url("/images/student_portal/writingPortalBg.jpg") no-repeat center top; }
+
+.starZonePortalBg { background: #102C50 url("/images/student_portal/starZonePortalBg.png") no-repeat center top; }
+
+.portalPage {
+    overflow-x: hidden;  
+}
+
+.ie8 .portalPage { overflow: scroll; }
+
+.messagesPortalBg {	
+	height: 100%;
+	width: 100%;
+	background: #2E95DA url("/images/student_portal/messagesBgRepeat.png");
+	position: fixed;
+}
+
+.content {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.contentWrapper { background: #f8efc6; }
+
+.iconPlaceholder {
+    background: #2989d8; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover,  #2989d8 1%, #1e5799 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover,  #2989d8 1%,#1e5799 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center,  #2989d8 1%,#1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */   
+    border-radius: 100px;
+    display: block;
+    height: 200px;
+    width: 200px;
+}
+
+.missionContent div[class$="Text"] {
+    color: #fff;
+    cursor: pointer;
+    background: #6B1246;
+    display: block;	    
+    font-family: chewy;
+    font-size: 28px;
+    padding: 3px 10px;
+    position: absolute;
+    text-align: center;      
+    white-space: nowrap;
+    transition: all .5s ease-out;
+}
+
+.missionContent div[class$="Text"]:hover,
+.missionContent img:hover + div {
+	background-color: #CB69A3;
+}
+
+/* One planet */
+.readyTestBtn.TR_PlanetLocation {
+	left: 407px;
+	top: 279px;	
+}
+
+/* Two planets */
+.readingBtn.RK_headsprout_PlanetLocation,
+.readingBtn.RK_SAZ_PlanetLocation {
+	left: 501px;
+	top: 319px;	
+}
+
+.headsproutBtn.RK_headsprout_PlanetLocation,
+.scienceBtn.RK_SAZ_PlanetLocation {
+	left: 251px;
+	top: 235px;	
+}
+
+.headsproutBtn.headsprout_WAZ_PlanetLocation,
+.headsproutBtn.headsprout_TR_PlanetLocation,
+.headsproutBtn.headsprout_SAZ_PlanetLocation,
+.scienceBtn.SAZ_WAZ_PlanetLocation,
+.scienceBtn.SAZ_TR_PlanetLocation {
+	left: 553px;
+	top: 331px;	
+}
+
+.writingBtn.headsprout_WAZ_PlanetLocation,
+.readyTestBtn.headsprout_TR_PlanetLocation,
+.scienceBtn.headsprout_SAZ_PlanetLocation,
+.writingBtn.SAZ_WAZ_PlanetLocation,
+.readyTestBtn.SAZ_TR_PlanetLocation {
+	left: 233px;
+	top: 235px;	
+}
+
+.readyTestBtn.RK_TR_PlanetLocation,
+.readyTestBtn.TR_WAZ_PlanetLocation,
+.writingBtn.RK_WAZ_PlanetLocation {
+	left: 233px;
+	top: 246px;	
+}
+
+.readingBtn.RK_WAZ_PlanetLocation,
+.readingBtn.RK_TR_PlanetLocation,
+.writingBtn.TR_WAZ_PlanetLocation {
+	left: 516px;
+	top: 331px;	
+}
+
+/*  Three Planets */
+.readingBtn.RK_headsprout_WAZ_PlanetLocation,
+.readingBtn.RK_TR_WAZ_PlanetLocation,
+.headsproutBtn.headsprout_TR_WAZ_PlanetLocation,
+.readingBtn.RK_headsprout_TR_PlanetLocation,
+.readingBtn.RK_headsprout_SAZ_PlanetLocation,
+.readingBtn.RK_SAZ_TR_PlanetLocation,
+.readingBtn.RK_SAZ_WAZ_PlanetLocation,
+.headsproutBtn.headsprout_SAZ_TR_PlanetLocation,
+.headsproutBtn.headsprout_SAZ_WAZ_PlanetLocation,
+.scienceBtn.SAZ_TR_WAZ_PlanetLocation {
+	left: 423px;
+	top: 358px;
+}
+
+.headsproutBtn.RK_headsprout_WAZ_PlanetLocation,
+.writingBtn.RK_TR_WAZ_PlanetLocation,
+.writingBtn.headsprout_TR_WAZ_PlanetLocation,
+.headsproutBtn.RK_headsprout_TR_PlanetLocation,
+.headsproutBtn.RK_headsprout_SAZ_PlanetLocation,
+.scienceBtn.RK_SAZ_TR_PlanetLocation,
+.scienceBtn.RK_SAZ_WAZ_PlanetLocation,
+.scienceBtn.headsprout_SAZ_TR_PlanetLocation,
+.scienceBtn.headsprout_SAZ_WAZ_PlanetLocation,
+.readyTestBtn.SAZ_TR_WAZ_PlanetLocation {
+	left: 141px;
+	top: 235px;
+}
+
+.writingBtn.RK_headsprout_WAZ_PlanetLocation,
+.readyTestBtn.RK_TR_WAZ_PlanetLocation,
+.readyTestBtn.headsprout_TR_WAZ_PlanetLocation,
+.readyTestBtn.RK_headsprout_TR_PlanetLocation,
+.scienceBtn.RK_headsprout_SAZ_PlanetLocation,
+.readyTestBtn.RK_SAZ_TR_PlanetLocation,
+.writingBtn.RK_SAZ_WAZ_PlanetLocation,
+.readyTestBtn.headsprout_SAZ_TR_PlanetLocation,
+.writingBtn.headsprout_SAZ_WAZ_PlanetLocation,
+.writingBtn.SAZ_TR_WAZ_PlanetLocation {
+	left: 643px;
+	top: 162px;
+}
+
+/* Four planets */
+.readingBtn.RK_headsprout_TR_WAZ_PlanetLocation,
+.readingBtn.RK_headsprout_SAZ_TR_PlanetLocation,
+.readingBtn.RK_headsprout_SAZ_WAZ_PlanetLocation,
+.readingBtn.RK_SAZ_TR_WAZ_PlanetLocation,
+.headsproutBtn.headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 406px;
+	top: 380px;
+}
+
+.headsproutBtn.RK_headsprout_TR_WAZ_PlanetLocation,
+.headsproutBtn.RK_headsprout_SAZ_TR_PlanetLocation,
+.headsproutBtn.RK_headsprout_SAZ_WAZ_PlanetLocation,
+.scienceBtn.RK_SAZ_TR_WAZ_PlanetLocation,
+.scienceBtn.headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 101px;
+	top: 235px;
+}
+
+.writingBtn.RK_headsprout_TR_WAZ_PlanetLocation,
+.scienceBtn.RK_headsprout_SAZ_TR_PlanetLocation,
+.scienceBtn.RK_headsprout_SAZ_WAZ_PlanetLocation,
+.readyTestBtn.RK_SAZ_TR_WAZ_PlanetLocation,
+.readyTestBtn.headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 655px;
+	top: 213px;
+}
+
+.readyTestBtn.RK_headsprout_TR_WAZ_PlanetLocation,
+.readyTestBtn.RK_headsprout_SAZ_TR_PlanetLocation,
+.writingBtn.RK_headsprout_SAZ_WAZ_PlanetLocation,
+.writingBtn.RK_SAZ_TR_WAZ_PlanetLocation,
+.writingBtn.headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 385px;
+	top: 113px;
+}
+
+/* Five planets */
+.readingBtn.RK_headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 355px;
+	top: 369px;
+}
+.headsproutBtn.RK_headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 115px;
+	top: 301px;
+}
+.scienceBtn.RK_headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 280px;
+	top: 67px;
+}
+.readyTestBtn.RK_headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 594px;
+	top: 121px;
+}
+.writingBtn.RK_headsprout_SAZ_TR_WAZ_PlanetLocation {
+	left: 670px;
+	top: 310px;
+}
+
+.hs-bookRoomBtn {
+	top: 395px;
+	left: 500px;
+}
+
+.headsproutBookRoomText {
+	left: 100px;
+	text-align: center;
+	top: 170px;	
+}
+
+.rk-assignmentBtn {
+    left: 360px;	
+    top: 370px;
+}
+
+.rk-readingAssignmentBtn {
+    left: 198px;	
+    top: 370px;
+}
+
+.rk-targetedAssignmentBtn {
+    left: 520px;	
+    top: 390px;
+}
+
+.rk-bookRoomBtn {
+    left: 560px;	
+    top: 40px;
+}
+
+.scienceAssignmentBtn {
+    left: 150px;	
+    top: 100px;
+}
+
+.scienceInTheNewsBtn {
+	left: 650px;
+	top: 130px;
+}
+
+.missionContent .scienceLibrary { /* need parent class to avoid conflict with science library page */
+    left: 343px;	
+    top: 322px;
+}
+
+.readyTestText {
+	left: 20px;
+	top: 100px;	
+}
+
+.xmessagesBtn {
+	left: 307px;
+	top: -21px;	
+}
+
+.rk-flightCheckBtn {
+    left: 130px;
+    top: 50px;    
+}
+
+.readingBtn {
+	left: 340px;
+	top: 380px;	
+}
+.testPrepBtn {
+    left: 350px;
+    top: 110px;    
+    width: 222px;
+}
+
+.writingText {
+    left: 69px;
+    top: 105px;
+}
+.headsproutText {
+    left: 60px;
+    top: 180px;    
+}
+
+.headsproutPlanetText {
+    left: 10px;
+    top: 130px;    
+}
+.testPrepText {
+    left: 25px;
+    top: 90px;
+}
+
+.readingText{
+	left: 80px;
+	top: 140px;	
+}
+
+.scienceText {
+	left: 38px;
+	top: 113px;	
+}
+
+.testPrepTexttestletAssignmentComplete {
+    display: none;
+}
+
+.scienceAssignmentText {
+    left: 24px;
+    top: 220px;    
+}
+
+.scienceAssignmentCompleteText {
+    left: -40px;
+    top: 220px;    
+}
+
+.scienceBookRoomText {
+    left: 28px;
+    top: 175px;    
+}
+
+.scienceInTheNewsText {
+	top: 270px;
+	left: 50px;
+}
+
+.rk-flightCheckText {
+	left: 15px;
+	top: 130px;	
+}
+
+.rk-bookRoomText {
+	left: 33px;
+	top: 200px;	
+}
+
+.rk-assignmentText {
+	left: -12px;
+	top: 140px;	
+}
+
+.rk-readingAssignmentText {
+	left: 48px;
+	top: 151px;	
+}
+
+.rk-targetedAssignmentText {
+	left: 19px;
+	top: 120px;	
+}
+
+/*** $Icon state changes ***/
+
+.btnTransition {
+    transition: transform .2s ease-in-out;    
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.btnTransition:hover {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}
+
+.btnTransition:active {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+/*** $Ship-Wrapper ***/
+
+.shipWrapper {
+	height: 100%;	
+	left: 0;	
+	margin: 0 auto;	
+	max-height: 900px;	
+	max-width: 1600px;	
+	min-height: 825px;	
+	min-width: 960px;	
+	position: absolute;
+	right: 0;
+	width: 100%;	
+}
+
+.shipDetailsLeft {
+	background: url("/images/student_portal/shipDetailsLeft.png");	
+	height: 504px;	
+	position: absolute;
+	right: 50px;
+	top: 100px;	
+	width: 78px;	
+}
+
+.shipDetailsRight {
+	background: url("/images/student_portal/shipDetailsRight.png");	
+	height: 524px;
+	left: 50px;
+	position: absolute;	
+	top: 125px;	
+	width: 79px;	
+}
+
+.shipLeft, 
+.shipRight {
+	background: #102C50;	
+	height: 100%;	
+	position: absolute;
+	top: 0;
+	width: 100px;
+	z-index: 1;				
+}
+
+.shipLeft {
+	left: 0;		
+	-ms-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+	transform-origin: top left;
+}
+
+.shipLeft:before, .shipRight:before {
+	display: block;
+	content: "";
+	width: 27px;
+	height: 100%;
+	position: absolute;
+	top: 0;	
+	background: #84a1ba; /* Old browsers */	
+}
+
+.shipLeft:before {
+	right: -1px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7bc5e9+0,a9eff5+100 */
+	background: #7bc5e9; /* Old browsers */
+	background: -moz-linear-gradient(left,  #7bc5e9 0%, #a9eff5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#7bc5e9), color-stop(100%,#a9eff5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #7bc5e9 0%,#a9eff5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #7bc5e9 0%,#a9eff5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #7bc5e9 0%,#a9eff5 100%); /* IE10+ */
+	background: linear-gradient(to right,  #7bc5e9 0%,#a9eff5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc5e9', endColorstr='#a9eff5',GradientType=1 ); /* IE6-9 */
+}
+
+.shipRight {
+	right: 0;
+	-ms-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	transform-origin: top right;
+}
+
+.shipRight:before {
+	left: -1px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a9eff5+0,7bc5e9+100 */
+	background: #a9eff5; /* Old browsers */
+	background: -moz-linear-gradient(left,  #a9eff5 0%, #7bc5e9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a9eff5), color-stop(100%,#7bc5e9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #a9eff5 0%,#7bc5e9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #a9eff5 0%,#7bc5e9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #a9eff5 0%,#7bc5e9 100%); /* IE10+ */
+	background: linear-gradient(to right,  #a9eff5 0%,#7bc5e9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9eff5', endColorstr='#7bc5e9',GradientType=1 ); /* IE6-9 */
+}
+
+.shipLeft:after, .shipRight:after {
+	display: block;
+	content: "";
+	width: 22px;
+	height: 351px;
+	position: absolute;
+	top: 180px;	
+	background-repeat: no-repeat;
+}
+
+.shipLeft:after {
+	right: 0;
+	background-image: url("/images/student_portal/cockpitBolts.png");
+}
+
+.shipRight:after {
+	left: 0;
+	background-image: url("/images/student_portal/cockpitBolts-flipped.png");
+}
+
+.bottomConsole {
+	background-image: url("/images/student_portal/console.png");	
+	height: 274px;
+	left: 0;	
+	margin: 0 auto;	
+	position: absolute;	
+	right: 0;	
+	top: -63px;
+	width: 960px;	
+	z-index: 1;
+}
+
+.bottomConsole a img, 
+.starZoneContent a img {
+	border: none;
+	outline: none;
+}
+
+.bottomStretch {
+	background: #102C50 url("/images/student_portal/consoleStretch.png");
+	bottom: -149px;
+	height: 210px;	
+	left: 0;
+	margin: 0 auto;	
+	right: 0;	
+	position: absolute;	
+	width: 100%;	
+}
+
+.shipBottomRight, 
+.shipBottomLeft {
+	bottom: -150px;	
+	height: 334px;	
+	position: absolute;		
+	width: 266px;	
+	z-index: 2;	
+}
+
+.shipBottomRight {
+	background-image: url("/images/student_portal/rightBottom.png");
+	right: 21px;
+	-ms-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+	transform-origin: top right;
+}
+
+.shipBottomLeft {
+	background-image: url("/images/student_portal/leftBottom.png");
+	left: 21px;
+	-ms-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	transform-origin: top left;
+}
+
+.shipBottomLeftHide, 
+.shipBottomRightHide {
+	background-color: #102C50;
+	bottom: -147px;
+	height: 220px;	
+	position: absolute;	
+	width: 120px;	
+	z-index: 1;	
+}
+
+.shipBottomLeftHide { 
+	left: 29px; 
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);	
+}
+
+.shipBottomRightHide { 
+	right: 29px; 
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);		
+}
+
+.bottomConsole > div,
+.bottomConsole > a { position: absolute; }
+
+
+
+/*** $Console-Buttons ***/
+
+.avatar-incentives-btn {
+	left: 180px;
+	top: 190px;
+}
+
+.raz-rocket-incentives-btn {
+	right: 190px;
+	top: 190px;
+}
+
+.incentivesBtn {
+	left: 549px;
+	top: -22px;	
+}
+
+.incentivesLink {
+    background: url("/images/student_portal/starShop.png") no-repeat;	
+    background-position: -96px 0;
+    display: block;
+    height: 96px;	 
+    text-indent: -9999em;  
+    width: 96px;	
+}
+
+.incentivesLink:after {
+    background: url("/images/student_portal/starShop.png") no-repeat;
+	content: "";
+	display: block;
+	height: 96px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 96px;
+	transition: all .7s ease-out;
+}
+
+.incentivesLink:hover:after {
+	opacity: 1;
+}
+
+.messagesNone,
+.messages,
+.messagesUnread {
+    display: block;	
+    height: 96px;	
+    text-indent: -9999em; 
+    width: 96px;    
+}
+
+.messagesNone {
+    background: url("/images/student_portal/messagseNone.png") no-repeat;	  		
+}
+
+.messages,
+.messages:after {
+    background: url("/images/student_portal/messages.png") no-repeat;	  
+}
+
+.messages:after,
+.messagesUnread:after {
+    background-position: -96px 0;    
+	content: "";
+	display: block;
+	height: 96px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 96px;
+	transition: opacity .7s ease-out;	
+}
+
+.messages:hover:after,
+.messagesUnread:hover:after {
+	opacity: 1;
+}
+
+.messages:after {
+    background-position: -96px 0;  	
+}
+
+.messagesUnread,
+.messagesUnread:after {
+    background: url("/images/student_portal/messagesUnread.png") no-repeat;	
+}
+
+.messagesUnread img {
+	display: block;
+	left: 23px;
+	position: absolute;
+	top: 43px;
+	z-index: 1;
+	-webkit-animation: unreadBounce 1s infinite;		
+	animation: unreadBounce 1s infinite;
+}
+
+.messagesUnread:hover img {
+	-webkit-animation: unreadBounce .5s infinite;	
+	animation: unreadBounce .5s infinite;	
+}
+
+.messagesUnread:after {
+    background-position: -96px 0;    
+}
+
+.messagesUnread:before {	
+    background-image: url("/images/student_portal/messageSprite.png");
+	content: "";
+	cursor: default;
+	display: block;
+	height: 60px;
+	left: 2px;
+	position: absolute;
+	top: -45px;
+	width: 94px;
+	z-index: -1;
+    -webkit-animation: unreadMessage 2.2s steps(52) infinite;
+    animation: unreadMessage 2.2s steps(52) infinite;	
+}
+
+.messagesUnread:hover:before {
+    -webkit-animation: unreadMessage 1.7s steps(52) infinite;
+    animation: unreadMessage 1.7s steps(52) infinite;		
+}
+
+.dashboardBtn {
+	left: 423px;
+	top: -23px;
+}
+
+@-webkit-keyframes unreadBounce {
+	0% {
+		transform: scale(1.0);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: scale(.8);
+		animation-timing-function: ease-in;
+	}	
+	0% {
+		transform: scale(1.0);
+	}	
+}
+
+@keyframes unreadBounce {
+	0% {
+		transform: scale(1.0);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: scale(.8);
+		animation-timing-function: ease-in;
+	}	
+	0% {
+		transform: scale(1.0);
+	}	
+}
+
+@-webkit-keyframes unreadMessage {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -4888px 0;
+    }
+}
+@keyframes unreadMessage {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -4888px 0;
+    }
+}
+
+
+
+/*** $Progress-Chart ***/
+
+.dashboardContent .progressChartInnerWrapper,
+.bookRoomProgressWrapper .progressChartInnerWrapper {
+	background: #176DC2;
+	height: 34px;	
+	padding: 3px 3px 0 3px;
+	width: 169px;	
+	z-index: 3;	
+}
+
+.dashboardContent .progressChartInnerWrapper {
+	position: relative;
+}
+
+.bookRoomProgressWrapper .progressChartInnerWrapper {
+	left: 0;
+	margin: 0 auto;
+	position: fixed;	
+	right: 0;
+	top: 61px;		
+}
+
+.progressChart {
+	background: #083461;	
+	border-left: 2px solid #083461;	
+	border-right: 2px solid #083461;	
+	height: 30px;	
+	float: left;
+	margin-right: 3px;	
+	min-width: 110px;	
+	position: relative;
+	top: -1px;
+}
+
+.progressChartInner {
+	background: #2EC7FF;
+	height: 26px;
+	left: 0;	
+	position: absolute;
+	top: 2px;
+}
+
+.progressChartInner .taskNum {
+	color: #000;
+	font-size: 12px;
+	font-weight: normal;
+	left: 0;
+	line-height: 14px;
+	position: absolute;	
+	text-align: center;	
+	text-shadow: 1px 1px 0 #FEF2D6;
+	top: 3px;
+	width: 100%;
+	z-index: 3;	
+}
+
+.currentLevel, .nextLevel { float: left; }
+
+.progressChart #level-,
+.progressChart #level-null { display: none; }
+
+.progressChartNotAssigned {
+	background: #CCC;
+	border-right: 2px solid #FFF;	
+	height: 19px;
+	left: 0;	
+	position: absolute;
+	top: 0;
+	z-index: 1;	
+}
+
+.progressInfo {
+	display: none;
+}
+
+.level:before { display: none; }
+
+.messageContent { /* May be unused, duplicated from raz-kids-portal.css */
+    background-color: rgb(300,300,300);
+	margin: 0 auto;
+	padding-top: 100px;
+    position: relative;
+    width: 800px;
+}
+
+.bookList ul.levels {
+	bottom: -5px;
+	left: 50%;
+	margin-left: -13px;
+	position: absolute;	
+}
+.bookList ul.levels .epBubble {
+    left: 0;
+    margin-left: -2px;
+    top: 3px;
+}
+	
+	
+	
+/*** $Headsprout ***/
+
+.headsproutBtn {
+	height: 187px;	
+	left: 101px;
+	top: 235px;
+	width: 186px;
+}
+
+.headsproutEpisodesBtn {
+	left: 101px;
+	top: 112px;	
+}
+
+/* Global styles */
+
+.mapWrapper {
+    font-family: Chewy, Arial;
+    height: 650px;
+    left: 0;
+    margin: 100px auto 0 auto; 
+    min-width: 960px;      
+    position: absolute;    
+    right: 0;
+}
+.epWrapper {
+    left: 50%;
+    position: absolute;    
+    top: 5px;
+}
+
+/* Ui styles */
+
+.levelTitle {
+    background: #800080;
+    border-radius: 8px;	
+    box-shadow: inset 0 3px #a822a8;
+    height: 35px;    
+    left: 280px;
+    line-height: 35px;        
+    position: absolute;
+    text-align: center; 
+    text-shadow: 0 1px 0 #555, 0 -1px 0 #000;       
+    top: 585px;
+    width: 360px;    
+}
+
+.ie8 .levelTitle { background: url("/images/headsprout/rsPlayerGuiSprites.png") 0 -140px; }
+
+	.levelTitle:before,
+	.levelTitle:after {
+	    background: url("/images/headsprout/rsPlayerGuiSprites.png");	
+	    content: "";
+	    display: block;
+	    height: 30px;    
+	    position: absolute;
+	    top: 3px;
+	    width: 16px;    
+	}
+
+	.levelTitle:before {
+	    background-position: -20px 0;
+	    left: -14px;
+	}
+
+	.levelTitle:after { right: -14px; }
+
+.hsStars {
+    font-size: 20px;	
+    left: 442px;    
+    position: absolute;  
+    top: -114px;      
+}
+
+/* Map images */
+
+.hser_episodes_1-5 { background: url("/images/headsprout/space.png") no-repeat center; }
+
+.hser_episodes_6-11 { background: url("/images/headsprout/dino.png") no-repeat center; }
+
+.hser_episodes_12-18,
+.hser_episodes_19-23 { background: url("/images/headsprout/sea.png") no-repeat center; }
+
+.hser_episodes_24-30,
+.hser_episodes_31-40 { background: url("/images/headsprout/jungle.png") no-repeat center; }
+
+.hser_episodes_41-47 { background: url("/images/headsprout/jungle2.png") center no-repeat; }
+
+.hser_episodes_48-56 { background: url("/images/headsprout/dino2.png") center no-repeat; }
+
+.hser_episodes_57-66 { background: url("/images/headsprout/sea2.png") center no-repeat; }
+
+.hser_episodes_67-80 { background: url("/images/headsprout/space2.png") center no-repeat; }
+
+.hsrc_episodes_1-14 { background: url("/images/headsprout/hsrcSea.png") center no-repeat; }
+
+.hsrc_episodes_15-22 { background: url("/images/headsprout/hsrcJungle.png") center no-repeat; }
+
+.hsrc_episodes_23-30 { background: url("/images/headsprout/hsrcDinosaur.png") center no-repeat; }
+
+.hsrc_episodes_31-39 { background: url("/images/headsprout/hsrcSpace.png") center no-repeat; }
+
+.hsrc_episodes_40-50 { background: url("/images/headsprout/hsrcFinale.png") center no-repeat; }
+
+/* Episode buttons */
+
+.epBubble,
+.epLocked,
+.epCompleted,
+.unfinishedBook {
+    background: #17E81D;	
+    border-radius: 100px;
+    box-shadow: 0 0 0 3px #013C17, 0 10px 6px rgba(0, 0, 0, 0.5);
+    color: #fff;    
+    cursor: pointer;    
+    display: block;    
+    font-size: 32px;
+	height: 70px;
+    line-height: 70px;    
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 70px; 
+    z-index: 1;
+}
+
+td .epBubble { /* remove once old activity icons have been removed */
+    border-radius: 100px;
+    bottom: -12px;
+    box-shadow: 0 0 0 2px #013C17;
+    font-family: chewy, arial;        
+    font-size: 18px;      
+    height: 30px;
+    left: 50%;
+    line-height: 30px;
+    margin-left: -22px;
+    width: 30px;
+}
+.activity .epBubble { /* for new activity icons */
+    border-radius: 100px;
+    bottom: -12px;
+    box-shadow: 0 0 0 2px #013C17;
+    font-family: chewy, arial;        
+    font-size: 18px;      
+    height: 30px;
+    left: -2px;
+    line-height: 30px;
+    position: relative;
+    width: 30px;
+}
+	td .epBubble:hover,
+	.activity .epBubble:hover {
+	    background: #17E81D;
+	    box-shadow: 0 0 0 2px #013C17;
+	}
+	
+	.epBubble:hover,
+	.unfinishedBook:hover {
+	    background: #65EC3C;
+	    box-shadow: 0 0 0 10px #0A7432, 0 12px 6px rgba(0, 0, 0, 0.5), 0 0 6px 6px rgba(246, 255, 203, 0.3);
+	}
+	
+.epLocked,
+.epCompleted {
+    background: #555;
+    box-shadow: 0 0 0 4px #222, 0 10px 6px rgba(0, 0, 0, 0.5);
+    color: #333;
+    cursor: default;
+    -webkit-transform: scale(0.8);    
+    transform: scale(0.8);
+}
+
+.epLocked:after {
+    background: url("/images/headsprout/lock.png") no-repeat;	
+    bottom: -25px;
+    content: "";  
+    display: block;
+    height: 45px;
+    left: 50%;
+    margin-left: -18px; 
+    position: absolute;
+    width: 35px;
+    z-index: -1;    
+}
+
+.epLocked:before {
+    background: #555;
+    border-radius: 70px;
+    content: "";
+    display: block;
+    height: 72px;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    width: 72px;
+    z-index: -1;
+}
+	
+.epCompleted {
+    background: #0098ff;
+    box-shadow: 0 0 0 4px #0061cf, 0 10px 6px rgba(0, 0, 0, 0.5);
+	color: #0061cf;   
+}
+
+	.epCompleted:before {
+	    background: url("/images/headsprout/complete.png") no-repeat;
+	    bottom: -25px;	    	
+	    content: "";
+	    display: block;
+	    height: 45px;
+	    left: 50%;
+	    margin-left: -18px;	    
+	    position: absolute;	    
+	    width: 35px;
+	    z-index: -1;
+	}
+
+.ie8 .epBubble { background: url(/images/headsprout/epBubbles.png) -80px 0; }
+
+.ie8 .epBubble:hover { background: url(/images/headsprout/epBubbles.png) -160px 0; }
+
+.ie8 td .epBubble,
+.ie8 td .epBubble:hover {
+    background: url(/images/headsprout/epBubbles.png) -480px 0;	
+    bottom: 15px;
+    margin-left: -16px;
+}
+
+.ie8 .epLocked { background: url(/images/headsprout/epBubbles.png) -240px 0; }
+
+.ie8 .epLocked:before { background: none; }
+
+.ie8 .epCompleted { background: url(/images/headsprout/epBubbles.png) 0 0; }
+
+.ie8 .unfinishedBook {
+    background: url(/images/headsprout/epBubbles.png) -320px 0;
+    z-index: 2;    
+}
+
+.ie8 .unfinishedBook:hover { background: url(/images/headsprout/epBubbles.png) -400px 0; }
+
+.current {
+    transition: all .1s ease-in-out;
+    -webkit-animation: currentScale .4s linear infinite alternate;
+    animation: currentScale .4s linear infinite alternate;
+}
+
+@-webkit-keyframes currentScale {
+    from {
+        -webkit-transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(1.1);
+    }
+}
+
+@keyframes currentScale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.unfinishedBook {
+    background: #17E81D url(/images/headsprout/unfinishedBook.png) center center no-repeat;
+    z-index: 2;    
+}
+
+.unfinishedBook:hover { background: #65EC3C url(/images/headsprout/unfinishedBook.png) center center no-repeat; }
+
+.benchmark,
+.benchmarkCurrent {
+    position: absolute;
+    z-index: 1;
+}
+
+.benchmarkCurrent {
+    cursor: pointer;
+    -webkit-animation: benchmarkScale .4s linear infinite alternate;
+    animation: benchmarkScale .4s linear infinite alternate;    
+    transition: all .1s ease-in-out;
+}
+
+@-webkit-keyframes benchmarkScale {
+    from {
+        -webkit-transform: scale(.8);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes benchmarkScale {
+    from {
+        transform: scale(.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.starEarnedWrapper {
+    margin: 0 auto;
+    position: relative;	
+    width: 960px;
+}
+
+#headsprout_episode_complete,
+#headsprout_read_complete,
+#headsprout_benchmark_complete,
+#headsprout_theme_complete {
+    height: 250px;
+    left: 50%;
+    margin-left: -152px;
+    position: absolute;
+    top: 150px;
+    width: 305px;
+    z-index: 10;
+    -webkit-transform: scale(.2);
+    transform: scale(.2);
+}
+
+.ie9 #headsprout_episode_complete,
+#headsprout_read_complete,
+#headsprout_benchmark_complete,
+#headsprout_theme_complete { transform: scale(1); }
+
+#headsprout_read_complete {
+    background: url("/images/headsprout/50.png") no-repeat;
+    -webkit-animation: starReward 1.5s 1s steps(30) forwards;
+    animation: starReward 1.5s 1s steps(30) forwards;
+}
+
+#headsprout_episode_complete {
+    background: url("/images/headsprout/100.png") no-repeat;
+    -webkit-animation: starReward 1.5s steps(30) forwards;
+    animation: starReward 1.5s steps(30) forwards;
+}
+
+#headsprout_benchmark_complete {
+    background: url("/images/headsprout/300.png") no-repeat;
+    -webkit-animation: starReward 1.5s 1s steps(30) forwards;
+    animation: starReward 1.5s 1s steps(30) forwards;
+}
+
+#headsprout_theme_complete {
+    background: url("/images/headsprout/500.png") no-repeat;
+    -webkit-animation: starReward 1.5s 2s steps(30) forwards;
+    animation: starReward 1.5s 2s steps(30) forwards;
+}
+
+@-webkit-keyframes starReward {
+    0% {
+        -webkit-transform: scale(.2);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(.1);
+    }
+}
+
+@keyframes starReward {
+    0% {
+        transform: scale(.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.1);
+    }
+}
+	
+/* Early reading episodes */
+
+.episode-1 {
+    top: 320px;
+    left: -320px;
+}
+.episode-2 {
+    top: 260px;
+    left: -205px;
+}
+.episode-3 {
+    top: 240px;
+    left: -85px;
+}
+.episode-4 {
+    top: 250px;
+    left: 40px;
+}
+.episode-5,
+.unfinishedbook-5 {
+    top: 290px;
+    left: 205px;
+}
+.episode-6,
+.unfinishedbook-6 {
+    top: 145px;
+    left: 265px;
+}
+.episode-7,
+.unfinishedbook-7 {
+    top: 220px;
+    left: 185px;
+}
+.episode-8,
+.unfinishedbook-8 {
+    top: 210px;
+    left: -25px;
+}
+.episode-9,
+.unfinishedbook-9 {
+    top: 240px;
+    left: -150px;
+}
+.episode-10,
+.unfinishedbook-10 {
+    top: 250px;
+    left: -270px;
+}
+.episode-11,
+.unfinishedbook-11 {
+    top: 370px;
+    left: -405px;
+}
+.episode-12,
+.unfinishedbook-12 {
+    top: 150px;
+    left: -375px;
+}
+.episode-13,
+.unfinishedbook-13 {
+    top: 180px;
+    left: -240px;
+}
+.episode-14,
+.unfinishedbook-14 {
+    top: 165px;
+    left: -125px;
+}
+.episode-15,
+.unfinishedbook-15 {
+    top: 155px;
+    left: 85px;
+}
+.episode-16,
+.unfinishedbook-16 {
+    top: 170px;
+    left: 200px;
+}
+.episode-17,
+.unfinishedbook-17 {
+    top: 250px;
+    left: 325px;
+}
+.episode-18,
+.unfinishedbook-18 {
+    top: 355px;
+    left: 265px;
+}
+.episode-19,
+.unfinishedbook-19 {
+    top: 350px;
+    left: 135px;
+}
+.episode-20,
+.unfinishedbook-20 {
+    top: 325px;
+    left: 25px;
+}
+.episode-21,
+.unfinishedbook-21 {
+    top: 320px;
+    left: -150px;
+}
+.episode-22,
+.unfinishedbook-22 {
+    top: 340px;
+    left: -245px;
+}
+.episode-23,
+.unfinishedbook-23 {
+    top: 385px;
+    left: -340px;
+}
+.episode-24,
+.unfinishedbook-24 {
+    top: 130px;
+    left: -405px;
+}
+.episode-25,
+.unfinishedbook-25 {
+    top: 230px;
+    left: -425px;
+}
+.episode-26,
+.unfinishedbook-26 {
+    top: 340px;
+    left: -410px;
+}
+.episode-27,
+.unfinishedbook-27 {
+    top: 375px;
+    left: -325px;
+}
+.episode-28,
+.unfinishedbook-28 {
+    top: 315px;
+    left: -260px;
+}
+.episode-29,
+.unfinishedbook-29 {
+    top: 225px;
+    left: -260px;
+}
+.episode-30,
+.unfinishedbook-30 {
+    top: 160px;
+    left: -200px;
+}
+.episode-31,
+.unfinishedbook-31 {
+    top: 130px;
+    left: -55px;
+}
+.episode-32,
+.unfinishedbook-32 {
+    top: 135px;
+    left: 110px;
+}
+.episode-33,
+.unfinishedbook-33 {
+    top: 160px;
+    left: 290px;
+}
+.episode-34,
+.unfinishedbook-34 {
+    top: 255px;
+    left: 270px;
+}
+.episode-35,
+.unfinishedbook-35 {
+    top: 230px;
+    left: 70px;
+}
+.episode-36,
+.unfinishedbook-36 {
+    top: 215px;
+    left: -30px;
+}
+.episode-37,
+.unfinishedbook-37 {
+    top: 250px;
+    left: -135px;
+}
+.episode-38,
+.unfinishedbook-38 {
+    top: 330px;
+    left: -75px;
+}
+.episode-39,
+.unfinishedbook-39 {
+    top: 350px;
+    left: 30px;
+}
+.episode-40,
+.unfinishedbook-40 {
+    top: 350px;
+    left: 140px;
+}
+.episode-41,
+.unfinishedbook-41 {
+    top: 340px;
+    left: -400px;
+}
+.episode-42,
+.unfinishedbook-42 {
+    top: 225px;
+    left: -240px;
+}
+.episode-43,
+.unfinishedbook-43 {
+    top: 320px;
+    left: -150px;
+}
+.episode-44,
+.unfinishedbook-44 {
+    top: 360px;
+    left: -20px;
+}
+.episode-45,
+.unfinishedbook-45 {
+    top: 310px;
+    left: 135px;
+}
+.episode-46,
+.unfinishedbook-46 {
+    top: 270px;
+    left: 320px;
+}
+.episode-47,
+.unfinishedbook-47 {
+    top: 150px;
+    left: 355px;
+}
+.episode-48,
+.unfinishedbook-48 {
+    top: 310px;
+    left: 135px;
+}
+.episode-49,
+.unfinishedbook-49 {
+    top: 310px;
+    left: 30px;
+}
+.episode-50,
+.unfinishedbook-50 {
+    top: 330px;
+    left: -75px;
+}
+.episode-51,
+.unfinishedbook-51 {
+    top: 355px;
+    left: -300px;
+}
+.episode-52,
+.unfinishedbook-52 {
+    top: 280px;
+    left: -380px;
+}
+.episode-53,
+.unfinishedbook-53 {
+    top: 170px;
+    left: -265px;
+}
+.episode-54,
+.unfinishedbook-54 {
+    top: 170px;
+    left: -135px;
+}
+.episode-55,
+.unfinishedbook-55 {
+    top: 195px;
+    left: 25px;
+}
+.episode-56,
+.unfinishedbook-56 {
+    top: 160px;
+    left: 185px;
+}
+.episode-57,
+.unfinishedbook-57 {
+    top: 330px;
+    left: -5px;
+}
+.episode-58,
+.unfinishedbook-58 {
+    top: 350px;
+    left: -105px;
+}
+.episode-59,
+.unfinishedbook-59 {
+    top: 380px;
+    left: -215px;
+}
+.episode-60,
+.unfinishedbook-60 {
+    top: 380px;
+    left: -315px;
+}
+.episode-61,
+.unfinishedbook-61 {
+    top: 160px;
+    left: -255px;
+}
+.episode-62,
+.unfinishedbook-62 {
+    top: 140px;
+    left: -150px;
+}
+.episode-63,
+.unfinishedbook-63 {
+    top: 165px;
+    left: 25px;
+}
+.episode-64,
+.unfinishedbook-64 {
+    top: 195px;
+    left: 125px;
+}
+.episode-65,
+.unfinishedbook-65 {
+    top: 195px;
+    left: 255px;
+}
+.episode-66,
+.unfinishedbook-66 {
+    top: 140px;
+    left: 340px;
+}
+.episode-67,
+.unfinishedbook-67 {
+    top: 395px;
+    left: 335px;
+}
+.episode-68,
+.unfinishedbook-68 {
+    top: 345px;
+    left: 195px;
+}
+.episode-69,
+.unfinishedbook-69 {
+    top: 340px;
+    left: 55px;
+}
+.episode-70,
+.unfinishedbook-70 {
+    top: 340px;
+    left: -45px;
+}
+.episode-71,
+.unfinishedbook-71 {
+    top: 335px;
+    left: -235px;
+}
+.episode-72,
+.unfinishedbook-72 {
+    top: 315px;
+    left: -335px;
+}
+.episode-73,
+.unfinishedbook-73 {
+    top: 280px;
+    left: -435px;
+}
+.episode-74,
+.unfinishedbook-74 {
+    top: 190px;
+    left: -420px;
+}
+.episode-75,
+.unfinishedbook-75 {
+    top: 140px;
+    left: -315px;
+}
+.episode-76,
+.unfinishedbook-76 {
+    top: 150px;
+    left: -200px;
+}
+.episode-77,
+.unfinishedbook-77 {
+    top: 165px;
+    left: -115px;
+}
+.episode-78,
+.unfinishedbook-78 {
+    top: 175px;
+    left: -25px;
+}
+.episode-79,
+.unfinishedbook-79 {
+    top: 185px;
+    left: 70px;
+}
+.episode-80,
+.unfinishedbook-80 {
+    top: 180px;
+    left: 160px;
+}
+.benchmark10 {
+    left: -360px;
+    top: 270px;
+}
+.benchmark20 {
+    left: -65px;
+    top: 305px;
+}
+.benchmark30 {
+    left: -100px;
+    top: 125px;
+}
+.benchmark40 {
+    left: 225px;
+    top: 340px;
+}
+.benchmark50 {
+    left: -185px;
+    top: 345px;
+}
+.benchmark60 {
+    left: -390px;
+    top: 305px;
+}
+.benchmark70 {
+    left: -140px;
+    top: 330px;
+}
+.benchmark80 {
+    left: 245px;
+    top: 160px;
+}
+/* Reading comprehension episodes */
+
+.hsrc .episode-1 {
+    left: -400px;
+    top: 220px;
+}
+.hsrc .episode-2 {
+    left: -300px;
+    top: 170px;
+}
+.hsrc .episode-3 {
+    left: -190px;
+    top: 130px;
+}
+.hsrc .episode-3 {
+    left: -100px;
+    top: 115px;
+}
+.hsrc .episode-3 {
+    left: -200px;
+    top: 135px;
+}
+.hsrc .episode-4 {
+    left: -100px;
+    top: 125px;
+}
+.hsrc .episode-5 {
+    left: 100px;
+    top: 200px;
+}
+.hsrc .episode-6 {
+    left: 0;
+    top: 205px;
+}
+.hsrc .episode-7 {
+    left: -100px;
+    top: 230px;
+}
+.hsrc .episode-8 {
+    left: -140px;
+    top: 320px;
+}
+.hsrc .episode-9 {
+    left: -50px;
+    top: 360px;
+}
+.hsrc .episode-10 {
+    left: 50px;
+    top: 350px;
+}
+.hsrc .episode-11 {
+    left: 130px;
+    top: 300px;
+}
+.hsrc .episode-12 {
+    left: 200px;
+    top: 230px;
+}
+.hsrc .episode-13 {
+    left: 260px;
+    top: 175px;
+}
+.hsrc .episode-14 {
+    left: 340px;
+    top: 135px;
+}
+.hsrc .episode-15 {
+    left: -390px;
+    top: 150px;
+}
+.hsrc .episode-16 {
+    left: -290px;
+    top: 220px;
+}
+.hsrc .episode-17 {
+    left: -290px;
+    top: 325px;
+}
+.hsrc .episode-18 {
+    left: -165px;
+    top: 215px;
+}
+.hsrc .episode-19 {
+    left: -40px;
+    top: 375px;
+}
+.hsrc .episode-20 {
+    left: 90px;
+    top: 360px;
+}
+.hsrc .episode-21 {
+    left: 200px;
+    top: 225px;
+}
+.hsrc .episode-22 {
+    left: 310px;
+    top: 330px;
+}
+.hsrc .episode-23 {
+    left: -400px;
+    top: 170px;
+}
+.hsrc .episode-24 {
+    left: -280px;
+    top: 145px;
+}
+.hsrc .episode-25 {
+    left: -160px;
+    top: 125px;
+}
+.hsrc .episode-26 {
+    left: -280px;
+    top: 250px;
+}
+.hsrc .episode-27 {
+    left: -270px;
+    top: 370px;
+}
+.hsrc .episode-28 {
+    left: 210px;
+    top: 320px;
+}
+.hsrc .episode-29 {
+    left: 210px;
+    top: 180px;
+}
+.hsrc .episode-30 {
+    left: 330px;
+    top: 180px;
+}
+.hsrc .episode-31 {
+    left: -370px;
+    top: 320px;
+}
+.hsrc .episode-32 {
+    left: -340px;
+    top: 210px;
+}
+.hsrc .episode-33 {
+    left: -230px;
+    top: 160px;
+}
+.hsrc .episode-34 {
+    left: -190px;
+    top: 280px;
+}
+.hsrc .episode-35 {
+    left: -100px;
+    top: 370px;
+}
+.hsrc .episode-36 {
+    left: 20px;
+    top: 370px;
+}
+.hsrc .episode-37 {
+    left: 130px;
+    top: 330px;
+}
+.hsrc .episode-38 {
+    left: 240px;
+    top: 340px;
+}
+.hsrc .episode-39 {
+    left: 350px;
+    top: 370px;
+}
+.hsrc .episode-40 {
+    left: -430px;
+    top: 265px;
+}
+.hsrc .episode-41 {
+    left: -330px;
+    top: 200px;
+}
+.hsrc .episode-42 {
+    left: -210px;
+    top: 140px;
+}
+.hsrc .episode-43 {
+    left: -110px;
+    top: 120px;
+}
+.hsrc .episode-44 {
+    left: 40px;
+    top: 125px;
+}
+.hsrc .episode-45 {
+    left: 150px;
+    top: 150px;
+}
+.hsrc .episode-46 {
+    left: 270px;
+    top: 210px;
+}
+.hsrc .episode-47 {
+    left: 360px;
+    top: 330px;
+}
+.hsrc .episode-48 {
+    left: 210px;
+    top: 310px;
+}
+.hsrc .episode-49 {
+    left: 100px;
+    top: 330px;
+}
+.hsrc .episode-50 {
+    left: -40px;
+    top: 320px;
+}
+
+
+
+/*** $Writing ***/
+
+.writeYourWayBtn, 
+.buildBookBtn, 
+.processWritingBtn,
+.kidsWritingRoomBtn {
+	position: absolute;
+} 
+
+.buildBookAnim,
+.kidsWritingRoomAnim,
+.processWritingAnim,
+.writeYourWayAnim { background: url("/images/student_portal/writingPlanetsSprite.png") no-repeat; }
+
+.buildBookBtn {
+    left: 80px;
+    top: 300px;
+}
+
+.buildABookText {
+    left: -2px;
+    top: 100px;    
+}
+
+.buildBookAnim {
+    background-position: -200px 0;
+    display: block;
+    height: 156px;
+    width: 160px;    
+}
+
+.writingRoomButton {
+	right: 330px;
+	top: 335px;
+}
+
+.writingRoomText {
+	left: 76px;
+	top: 100px;       
+}
+
+.writingLibraryText {
+	left: -3px;
+	top: 200px;
+}
+
+.writingLibraryButton {
+	left: 605px;
+	top: 140px;
+}
+
+.writingAssignmentText {
+    left: -35px;
+    top: 120px; 
+}
+
+.writingAssignmentsButton {
+    left: 161px;
+    top: 63px;	
+}
+
+.kidsWritingRoomAnim {
+    background-position: 0 0;
+    display: block;
+    height: 175px;    
+    width: 175px;   
+}
+
+.processWritingBtn {
+    left: 450px;
+    top: 440px;
+}
+
+.processWritingText {
+    left: -63px;
+    top: 90px;
+}
+
+.processWritingAnim {
+    background-position: -400px 0;
+    display: block;    
+    height: 156px;
+    width: 164px;    
+}
+
+.writeYourWayBtn {
+    left: 300px;
+    top: 150px;
+}
+
+.writeYourWayText {
+    left: -9px;
+    top: 100px;    
+}
+
+.writeYourWayAnim {
+    background-position: -600px 0;
+    display: block;    
+    height: 161px;
+    width: 167px;    
+}
+
+.writingPlanetBg {
+    background: url("/images/student_portal/solarBG.png") center center no-repeat;
+    height: 426px;
+    left: 50%;
+    margin-left: -490px;
+    position: absolute;
+    top: 5px;
+    width: 1056px;
+}
+
+.writingPlanetBottomBg {
+    background: url("/images/student_portal/writingBG.png") no-repeat center bottom;
+    min-height: 163px;
+    min-width: 960px;
+}
+
+.writingPlanetFillBg { background: #fff; }
+
+/* Writing planet popout */
+
+.planetPopout {
+    background: #d7e9f7;
+    border: 10px solid #820182;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    font-family: chewy, verdana;
+    position: relative !important;
+    top: 250px;
+    z-index: 10000;
+}
+
+.planetPopout h1 {
+    background: #820182;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    left: -10px;
+    line-height: 45px;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    position: absolute;
+    top: -50px;
+}
+
+.planetPopout hr {
+    border: 0;
+    height: 2px;
+    margin: 0 20px;
+    background: -moz-linear-gradient(left, rgba(0, 113, 188, 0) 0%, rgba(0, 113, 188, 1) 30%, rgba(0, 113, 188, 1) 70%, rgba(0, 113, 188, 0) 100%);/* FF3.6+ */    
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 113, 188, 0)), color-stop(30%, rgba(0, 113, 188, 1)), color-stop(70%, rgba(0, 113, 188, 1)), color-stop(100%, rgba(0, 113, 188, 0)));/* Chrome,Safari4+ */ 
+    background: -webkit-linear-gradient(left, rgba(0, 113, 188, 0) 0%, rgba(0, 113, 188, 1) 30%, rgba(0, 113, 188, 1) 70%, rgba(0, 113, 188, 0) 100%);/* Chrome10+,Safari5.1+ */  
+    background: -o-linear-gradient(left, rgba(0, 113, 188, 0) 0%, rgba(0, 113, 188, 1) 30%, rgba(0, 113, 188, 1) 70%, rgba(0, 113, 188, 0) 100%);/* Opera 11.10+ */  
+    background: -ms-linear-gradient(left, rgba(0, 113, 188, 0) 0%, rgba(0, 113, 188, 1) 30%, rgba(0, 113, 188, 1) 70%, rgba(0, 113, 188, 0) 100%);/* IE10+ */
+    background: linear-gradient(to right, rgba(0, 113, 188, 0) 0%, rgba(0, 113, 188, 1) 30%, rgba(0, 113, 188, 1) 70%, rgba(0, 113, 188, 0) 100%);/* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000071bc', endColorstr='#000071bc', GradientType=1);/* IE6-9 */
+}
+
+.planetPopout ul {
+    list-style-type: none;	
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.planetPopout ul a {
+    background: #379ede;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-family: chewy;
+    line-height: 20px;
+    margin: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.planetPopout ul a:hover { background: #50b9fa; }
+
+.planetPopout li { position: relative; }
+
+.planetPopout .deleteDraft {
+    background: #CC0808;
+    border-radius: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    position: absolute;
+    right: -22px;
+    text-align: center;
+    top: -48px;
+    width: 50px;
+    transition: transform .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.planetPopout .deleteDraft:hover { background: #FF2626; }
+
+.planetPopout .deleteDraft img {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+}
+
+.planetPopout .cancelDraftDelete {
+    background: #F06E09;
+    float: left;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.planetPopout .cancelDraftDelete:hover { background: #FF9B21; }
+
+.planetPopout .confirmDraftDelete {
+    background: #15bd37;
+    float: left;
+    font-size: 30px;
+}
+
+.planetPopout .confirmDraftDelete:hover { background: #30de2a; }
+
+.planetPopoutTitle,
+.deleteConfirmation {
+    color: #379ede;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.planetPopoutInstructions {
+    color: #4e5b80;
+    display: block;
+    font-size: 18px;
+}
+
+.popoutAssignment,
+.popoutOYO {
+    display: inline-block;
+    min-height: 142px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 268px;
+}
+
+.popoutOYO { background: #fff; }
+
+.planetPopout .close {
+    background: #F06E09;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 30px;
+    line-height: 55px;
+    padding: 0 21px;
+    position: absolute;
+    right: -40px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.7);
+    top: -40px;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: transform .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.planetPopout .close:hover {
+    background: #FF9B21;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+	
+.startNew {
+    background: #15bd37;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    left: 55px;
+    line-height: 30px;
+    margin: 30px auto 20px auto;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 170px;
+}
+
+.startNew:hover { background: #30de2a; }
+
+.deleteConfirmation {
+    background: #fff;
+    border: 5px solid #820182;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+    left: 50%;
+    margin-left: -155px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 300px;    
+    z-index: 1;
+}
+
+
+
+/*** $ReadyTest ***/
+
+.testPrep {
+    background: url("/images/student_login/lunarBg.png") no-repeat scroll center 0 #F8EFC6;	
+    height: 100%;    
+    padding: 0;
+}
+
+.testPrep .header {
+    left: 20px;	
+    padding: 0;
+    position: absolute;
+    top: 10px;    
+    z-index: 1;
+}
+
+.kidsTestPrepContainer {
+    background: url(/images/bg-white-transparent-grad.png) 0 0 repeat-x;
+    border-radius: 10px;
+    left: 0;  
+    margin: 0 0 0 20px;     
+    position: absolute;
+    top: 80px;   
+    width: 97%;     
+    z-index: 1;
+}
+
+.kidsTestPrepContainerInner { padding: 15px; }
+
+.testPrep .overlay {
+    background: url(/shared/img/lightwindow/black-70.png);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;    
+    width: 100%;
+    z-index: 10;    
+}
+
+.testPrep .overlay .doYouHaveTime {
+    background: orange;
+    border: 5px solid #FFF;
+    border-radius: 10px;    
+    color: #000;
+    font-size: 220%;
+    font-weight: bold;    
+    height: 200px;
+    line-height: 180%;
+    margin: 60px auto 0;
+    padding: 30px;    
+    text-align: center;    
+    width: 300px;   
+}
+
+.testPrep .overlay .doYouHaveTime a { padding-right: 30px; }
+
+.daysLeft {
+    background: url("/images/student_portal/daysLeftDisplay.png") center center no-repeat;
+    bottom: -20px;    
+    color: #fff;
+    font-family: chewy;
+    font-size: 24px;
+    height: 62px;    
+    left: -20px;        
+    line-height: 60px;
+    position: absolute;
+    width: 80px;    
+    z-index: 5;
+}
+
+.daysLeftNum {
+    display: block;
+    text-align: center;
+    width: 62px;
+}
+
+
+
+/*** $Dashboard ***/
+
+.dashRank { background: #555; }
+.dashReading { background: #666; }
+.dashHeadsprout { background: #777; }
+.dashReadyTest { background: #888; }
+.dashWriting { background: #999; }
+
+
+
+/* Error-Colors */
+
+.maintenance { color: #ffffff; }
+
+.dbError { color: #fff; }
+
+.dbError a { color: #fff; }
+
+
+
+/*** $Media-Queries ***/
+
+@media (max-width: 900px) {
+	.portalPage { overflow-x: scroll; }
+	
+	.headerWrap, 
+	.headerFixedWidthWrapper { position: absolute; }
+}
+
+@media (max-height: 770px) {
+	.portalPage { overflow-y: scroll; }
+}
+
+
+
+/*** $Defunct ***/
+
+.banner500 { display: none; }
+
+.studentInner .banner500 { display: block; }
+
+.starAwardBanner {
+	border: none;
+	float:left;
+    margin-left: 158px;
+}
+
+.awardBanner {
+    border: none;
+    float: left;
+    height: 111px;
+    margin-right: 15px;
+    width: 80px;
+}
+
+.awardWrap {
+    overflow: auto;
+    position: absolute;
+    top: -127px;
+}
+
+#content {
+    background-color: #f8efc6;  
+	margin: 0 auto;
+    padding: 130px 5px 5px 5px;  
+    position: relative;   
+    width: 960px;     
+    z-index: 2;
+}
+
+#content .big {
+    font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;	
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;    
+    text-align: center;
+}
+
+td.bonusStars { text-align: left; }
+
+td.bonusBook { text-align: center; }
+
+.quizMessage {
+    background: #FDE174;
+    border: 2px solid #FDBE4B;
+    margin: 15px auto 0 auto;    
+    padding: 5px;
+    position: relative;
+    text-align: center;    
+    width: 350px;   
+}
+
+/****!!! Should be deleted when module is updated !!!****/
+#bookroomLevelBarPadding #bookroomLevelBar {
+	margin: 20px auto 0 auto;
+}
+
+.footer {
+    width: 120px;
+    margin: auto;
+    padding: 5px;
+}
+
+.footer a, .footer a:visited, .footer a:active, .footer a:focus, .footer a:link {
+    color: #FFF;
+    font-size: 12px;
+}

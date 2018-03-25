@@ -1,0 +1,27 @@
+        @-webkit-keyframes grow {
+            from { -webkit-transform: scale(.01); }
+            to { -webkit-transform: scale(2); }
+        }
+        @-webkit-keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes grow {
+            from { transform: scale(.01); }
+            to { transform: scale(2); }
+        }
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .star-animation {
+            position: fixed;
+            background-image: url(/images/star-large.png);
+            z-index: 10;
+            width: 300px;
+            height: 291px;
+            -webkit-animation: grow .75s linear 1, fade .75s linear 1 reverse;
+            animation: grow .75s linear 1, fade .75s linear 1 reverse;
+        }
+

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><!--[if IE 8]> <html class="ie8"> <![endif]--><!--[if IE 9]> <html class="ie9"> <![endif]--><!--?xml version="1.0" encoding="Windows-1252"?--><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>Interface Etudiant | 1</title>
+    <!-- global meta tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <!-- Scripts -->
+    <script type="text/javascript" async="" src="Style/js/ga.js"></script><script type="text/javascript" src="Style/js/prototype--clt_18_03_011-1520366503.js"></script>
+    <script type="text/javascript" src="Style/js/kaz--clt_18_03_011-1520366503.js"></script>
+    <script type="text/javascript" src="Style/js/scriptaculous--clt_18_03_011-1520366503.js"></script><script type="text/javascript" src="Style/js/builder.js"></script><script type="text/javascript" src="Style/js/effects.js"></script><script type="text/javascript" src="Style/js/dragdrop.js"></script><script type="text/javascript" src="Style/js/controls.js"></script><script type="text/javascript" src="Style/js/slider.js"></script><script type="text/javascript" src="Style/js/sound.js"></script>
+    <script type="text/javascript" src="Style/js/lightwindow--clt_18_03_011-1520366503.js"></script>
+    <script type="text/javascript" src="Style/js/bannercontroller--clt_18_03_011-1520366503.js"></script>
+
+
+    <!--Styles -->
+    <link rel="stylesheet" href="Style/css/star-splash--clt_18_03_011-1520366503.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="Style/css/header-student-portal--clt_18_03_011-1520366503.css" type="text/css">
+    <link rel="stylesheet" href="Style/css/raz-kids-student-portal--clt_18_03_011-1520366503.css" type="text/css">
+    <link rel="stylesheet" href="Style/css/raz-kids-portal--clt_18_03_011-1520366503.css" type="text/css">
+    <link rel="stylesheet" href="Style/css/common--clt_18_03_011-1520366503.css" type="text/css">
+    <link rel="stylesheet" href="Style/css/lightwindow--clt_18_03_011-1520366503.css" type="text/css" media="screen">
+
+    <!-- Styleguide -->
+    <link type="text/css" media="all" rel="stylesheet" href="Style/css/styles-student-eng--clt_18_03_011-1520366503.css">
+    <link type="text/css" media="all" rel="stylesheet" href="Style/css/styles-student--clt_18_03_011-1520366503.css">
+    <!-- Fonts -->
+
+</head>
+<body>
+
+<div class="headerWrap">
+
+
+    <div class="header">
+        <div class="headerInner">
+            <!-- begin header section -->
+
+            <div class="headerStatusWrap">
+                <span>Accueil Etudiant</span>
+                <div class="bgImgBookRoom"></div>
+
+
+            </div>
+            <div class="shipTopLeft"></div>
+            <div class="shipTopRight"></div>
+            <div class="header-student-info">
+                <div class="perspective">
+                    <a href="#" class="header-logout-btn">
+                        <span class="header-side3d right"></span>
+                        <span class="header-side3d top"></span>
+                        <span class="header-side3d front">Sortir</span>
+                    </a>
+                    <a href="#" class="header-parent-btn">
+                        <span class="header-side3d right"></span>
+                        <span class="header-side3d top"></span>
+                        <span class="header-side3d front">Parent</span>
+                    </a>
+                    <div class="header-screen-name">
+                        <div>Nom Etudiant</div>
+                    </div>
+                    <div class="header-avatar-wrapper">
+                        <div class="header-side3d right"></div>
+                        <div class="header-side3d front">
+                            <div class="avatar-display">
+                                <div id="headerAvatar">
+                                    <div id="header-avatar-head">
+                                        <img src="Style/images/enfant_image.jpg" height="86px" width="95px">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="starDisplayCount" class="header-star-display">
+                            <span>150_points</span>
+                            <div class="header-side3d right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="Style/images/logo.jpeg" width="150px" height="50px" title="logo" alt="Logo" class="kazLogo">
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="Style/js/jquery-1.9.1.min--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript">
+    var $j = jQuery.noConflict();
+</script>
+<script type="text/javascript" src="Style/js/underscore-1.5.2--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/angular.min--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/angular-animate.min--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/angular-aria.min--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/angular-messages.min--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/angular-resource.min--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/angular-ui-router--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/angular-modal-service--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/shared.module--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/underscore-1.8.3.min--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/_.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/feature-check.provider--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/template-request.decorator--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/message-handler.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/api-students-list.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/join.filter--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/assign-resources-button.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/assign-resources.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/http-request-interceptor.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/jqdatepicker.directive--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/laz-checkbox.directive--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/laz-checkbox.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/laz-field-error-bubble.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/laz-toggle-switch.directive--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/laz-lightwindow.service--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/laz-lightwindow.directive--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/managed-order-by.filter--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/message-box.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/message-reporter.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/more-less-text.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/nav-tab.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/nav-tabs.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/order-manager.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/pager.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/popover-content.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/popover-target.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/popover.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/ranged-slider.directive--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/resource-list.service--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/select-students-by-group.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/slider.directive--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/sort-header.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/student-checkbox-list.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/student-checkbox.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/student-list.provider--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/student-list-with-levels.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/toast-list.service--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/toast-reporter.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/tooltip.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/tutorial.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/tutorial-event-hub.service--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/tutorial-popup.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/tutorial-popover-base.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/tutorial-popover-base-content.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/tutorial-popover-base-target.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/tutorial-popup-target.directive--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/ui-message-box-response.filter--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/feature-check.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/help-popover.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/slide-pane-button.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/slide-pane.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/slide-pane-item.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/scroll-model.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/bounded-scroll-model.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/looping-scroll-model.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/bookroom.module--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/logged-in-info.provider--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/gui-config.provider--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/bookroom-collections.provider--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/test.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/bookroom-home.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/top-level-collection.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/collection-booklist.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/favorites-service.service--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/bookroom-slide-pane.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/sample-bookroom-slider.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/bookroom-collections.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/favorite-themes.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/favorites.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript">
+    angular.module('shared')
+        .config(['FeatureCheckProvider', function (FeatureCheckProvider) {
+            FeatureCheckProvider.setEnabledFeatures({"ROSTER_STUDENT_XFER":true,"USE_JDE_CATALOG_WEB_SERVICE":true,"KIDS_LOGIN":true,"RK_ROCKET_AUDIO":true,"ULBrowserPageAndMoveDelete":true,"STAGE_CATALOG_REQUESTS":true,"RAZ-CMS-PRODUCT-UPDATES":true,"AUTHORING_TOOL":true,"READING_SKILL_ROLLUP_JOB":true,"RAZ_PLUS_COLLECTIONS":true,"PURCHASE_ELL_IN_SHOPPING_CART":true,"RAZ_COMMON_CORE":true,"RAZ_TUTORING":true,"LAZ_SFC_OPTOUT_EVENTS":true,"HTML5_FREQUENCY_WORD_ASSESSMENTS":true,"RAZ_CLOSE_READING":true,"HTML5_STUDENT_ASSESSMENT":true,"RAZ_REDESIGN_LEVELED_BOOK":true,"KI_CSI_TAX":true,"GIANTS_NONFICTION_SERIES":true,"RAZ_REDESIGN_ELL":true,"LAZ_SSS_TAX":true,"LAZ_CSI_TAX":true,"PAY_BY_CREDIT_CARD":true,"SAZ_DASHBOARD":true,"ADMIN_DASHBOARDS":true,"ACCESS_CONTROL_USAGE_REPORTING_EMAIL":true,"KAZ_OVERVIEW_DASHBOARD":true,"FF_NEW_DEFINITIONS":true,"SCIENCE_IN_THE_NEWS":true,"SIX_FOLDER_DEPTH":true,"HEADSPROUT_COMPREHENSION_SKILL_REPORT":true,"CMS_STICKER_BOOK":true,"REQUIRE_LISTEN_BOOKS":true,"SAZ_ASSIGNMENT_LIBRARY_PREFERENCE_ENHANCEMENT":true,"SALES_TRACKING_SOLR_SEARCH":true,"LESSON_PLANNER":true,"TABBED_STUDENT_INFO":true,"REV_KIDS":true,"FF_USE_REPORTING_RELATIONSHIP":true,"TABBED_CLASS_ACTIVITY_REPORT":true,"TABBED_ROSTER_MANAGE":true,"FF_ULBROWSER_COPY_FILES":true,"LEVELED_BOOK_LESSONS":true,"READY_TEST_SKILL_ROLLUP_JOB":true,"FF_NOTES":true,"LAZ_TRAINING_AUTO_ADD":true,"RAZ_MATH":true,"FF_NEW_FORGOT_PASSWORD":true,"KIDSA-Z_STUDENT":true,"CSI_SOLR_SEARCH":true,"EUROPEAN_CURRICULUM_STANDARDS":true,"ORDER_NOW_REDESIGN_CLIENT":true,"RK_ELL_VOCAB":true,"RAZ_PLUS_USER_MANAGEMENT":true,"RAZ_GRAPHIC_BOOKS":true,"RAZ_THEMED_NONFICTION":true,"DESK_CUSTOMER_SERVICE":true,"ORDER_NOW_REDESIGN":true,"LAZ_REDESIGN_USER_PAGE":true,"EL_SFC_LINE_ITEMS":true,"REFERRAL_PROGRAM":true,"KIDSA-Z":true,"SERVER_INFO_LOGGING":true,"EL_SFC_TAX":true,"K3000_CUSTOMIZE_TOOLBARS":true,"PROFILE_PHOTO_UPLOAD":true,"HEADSPROUT_DASHBOARD":true,"KAZ_TEACHER_DASHBOARD_EXAMPLE":true,"READERS_THEATER_LEVELS":true,"FOUNDATION_SKILLS":true,"SPANISH_QUIZZES":true,"BATCHADD_SISID":true,"FF_CREATE_NOTES":true,"MEMBER_TEACHER_CODE":true,"USE_TEACHER_ACCOUNT_ID_FOR_LEVEL_AND_READING_RATE":true,"FF_HTML5_CLIENTS":true,"K3000_OFFLINE_MODE2":true,"K3000_NEW_UI":true,"PHONICS_SKILL_ROLLUP_JOB":true,"LAZ_CMS_SYNCWORDS_API":true,"CSI_SSO_AUTHENTICATION":true,"HTML5_ALPHABET_ASSESSMENTS":true,"ROSTER_PAGE_GRADE_TUTORIAL":true,"FF_USER_FEATURE_LOCKING":true,"READYTEST_DASHBOARD":true,"ORG_NAME_HISTORY_ROLLUP":true,"OVERRIDE_AND_PAY_TAX_SERVICE_FAILURE_BILLS":true,"WEB_LISTEN_WITH_ANIMATION":true,"HS_NO_MOUSING_AROUND":true,"IP_COUNTRY_REDIRECT":true,"IS_SORT_CUSTOM_ASSIGNMENT_RESOURCES_IN_PHP":true,"NEXT_GENERATION_SCIENCE_STANDARDS":true,"SUPPRESS_WRITING_TEACHER_ACCOUNT_IDS":true,"SPANISH_BENCHMARK_PASSAGES":true,"TEACHER_VIEW_MARKUP":true,"SPANISH_SUMMER_SCHOOL_THEME_PACKS":true,"MOBILE_RUNNING_RECORD":true,"HEADSPROUT_ADMIN_DASHBOARD":true,"FIRST_ATTEMPT_QUIZ_REPORTS":true,"BRAINHONEY_LINK_HEADSPROUT":true,"BRAINHONEY_LINK_ACCOUNTS":true,"BRAINHONEY_LINK_KIDSAZ":true,"BRAINHONEY_LINK_RAZ":true,"BRAINHONEY_LINK_RAZKIDS":true,"BRAINHONEY_LINK_VOCAB":true,"BRAINHONEY_LINK_SAZ":true,"BRAINHONEY_LINK_WAZ":true,"RAZ_PLUS_MEMBERHOME_REDESIGN":true,"HTML5_RAZ_ROCKET":true,"WORLD_LANGUAGES":true,"ADMIN_DASHBOARDS_REWRITE":true,"HTML5_TEACHER_ROCKET":true,"RAZ_BANNER_NONMEMBER":true,"RAZ_BANNER_MEMBER":true,"LAZ_SALESFORCE_OPPORTUNITY_SYNC":true,"BENCHMARK_BOOK_REVISIONS_PROJECT":true,"SPECTACULAR_SPORTS_NONFICTION_SERIES":true,"SCIENCE_SKILL_ROLLUP":true,"WRITING_DASHBOARD":true,"SCIENCE_SPANISH":true,"SCIENCE_STUDENT_MANAGEMENT":true,"SCIENCE_KIDS":true,"STUDENT_TRANSFER_WITHOUT_PLACEHOLDER_SUBSCRIPTIONS":true,"HS_HTML5":true,"ELL_VOCABULARY_POWER_PACKS":true,"REDIRECT_STUDENT_SSO_LOGOUT":true,"SILVERPOP_TO_ACT_ON_MIGRATION":true,"KAZ_STUDENT_DASHBOARD":true,"ENABLE_MOST_RECENTLY_AVAILABLE_DIST_RPT_DATE":true,"FF_UL_DIRECTORY_LIST_USING_FFBACK":true,"MOBILE_LISTEN_WITH_ANIMATION":true,"ACCOUNTS_IMPORT_TEACHERS":true,"FLORIDA_ALTERNATE_ASSESSMENT_STANDARDS":true,"LANGUAGE_FILTER_SKILL":true,"RAZ_MEMBER_HOME_REDESIGN":true,"GRADE_LEVEL_BANNER":true,"GRADE_LEVELS":true,"LAZ_SSO_DISTRICT_GROUPING":true,"WAZ_MEMBER_HOME_REDESIGN":true,"SAZ_MEMBER_HOME_REDESIGN":true,"RK_MEMBER_HOME_REDESIGN":true,"FIRST_ATTEMPT_GROUP_FILTERS":true,"LAZ_SALES_REP_TERRITORY_ASSIGNMENTS":true,"HEADSPROUT_PLACEMENT_TEST":true,"DEMO_ROSTER":true,"LOG_SSO_NON_EXCEPTION_AUTHENTICATION_FAILURES":true,"CLEAR_SESSION_FOR_SSO_AUTHENTICATION":true,"KIDS_WALK_ME_MODULES":true,"STUDENT_SPANISH_BENCHMARK_PASSAGES":true,"AUTOROSTER_CSV_READER_VER2":true,"SAZ_ADVENTURE_VIDEO_CONTENT":true,"EL_PRODUCT_CONSISTENCY":true,"K3000_BIBLIOGRAPHY_TOOL":true,"K3000_SPEECH_TO_TEXT":true,"FRENCH_EQUIZZES":true,"GETTING_STARTED_GUIDES":true,"DESK_LIVE_CHAT_SERVICE":true,"DEMO_ROSTER_ACTIVITY":true,"CREATE_N_IN_1_CAMPAIGN_OFFER_ELL":true,"USAGE_REPORT_ROLLUP_SERVICE":true,"SCIENCE_TOPIC_SKILL_REPORT":true,"TRIAL_EXPERIENCE":true,"INTERACTIVE_SCIENCE":true,"ELL_COMIC_CONVERSATIONS":true});
+        }]);
+</script>
+<script type="text/javascript">
+    angular.module('kids.bookroom')
+        .config(['loggedInInfoProvider', 'bookroomCollectionsProvider', 'guiConfigProvider',
+            function (loggedInInfoProvider, bookroomCollectionsProvider, guiConfigProvider) {
+                loggedInInfoProvider.extend({"member_id":"5705972","student_id":"230961188","student_accounts":{"rk":{"student_account_id":"242028391","site_abbreviation":"rk","raz_level_id":"19","is_licensed":"y"}}});
+                bookroomCollectionsProvider.extend([{"collection_id":1,"parent_collection_id":null,"collection_name":"Leveled Books","collection_image":"\/images\/mobile\/book_collection\/1.png","collection_svg":"\/images\/book_collection_icons\/1.svg","default_level":"R","child_collections":[],"sub_collections":[{"id":1,"name":"aa","description":"aa","active":false,"colors":{"bg":"#d81414","border":"#810a0a"}},{"id":2,"name":"A","description":"A","active":false,"colors":{"bg":"#f04d83","border":"#841137"}},{"id":3,"name":"B","description":"B","active":false,"colors":{"bg":"#c729a7","border":"#6d0d5a"}},{"id":4,"name":"C","description":"C","active":false,"colors":{"bg":"#8b1b66","border":"#460932"}},{"id":5,"name":"D","description":"D","active":false,"colors":{"bg":"#660066","border":"#310231"}},{"id":6,"name":"E","description":"E","active":false,"colors":{"bg":"#000066","border":"#01012a"}},{"id":7,"name":"F","description":"F","active":false,"colors":{"bg":"#1515af","border":"#090958"}},{"id":8,"name":"G","description":"G","active":false,"colors":{"bg":"#1e1ee5","border":"#0b0b8a"}},{"id":9,"name":"H","description":"H","active":false,"colors":{"bg":"#5353ee","border":"#1212b5"}},{"id":10,"name":"I","description":"I","active":false,"colors":{"bg":"#2f89e3","border":"#12579c"}},{"id":11,"name":"J","description":"J","active":false,"colors":{"bg":"#2ac0e5","border":"#198daa"}},{"id":12,"name":"K","description":"K","active":false,"colors":{"bg":"#1bdbdb","border":"#0fabab"}},{"id":13,"name":"L","description":"L","active":false,"colors":{"bg":"#1af1c6","border":"#10b594"}},{"id":14,"name":"M","description":"M","active":false,"colors":{"bg":"#1efaa2","border":"#3bcb91"}},{"id":15,"name":"N","description":"N","active":false,"colors":{"bg":"#00cc66","border":"#13824b"}},{"id":16,"name":"O","description":"O","active":true,"colors":{"bg":"#04934c","border":"#046334"}},{"id":17,"name":"P","description":"P","active":true,"colors":{"bg":"#009933","border":"#046524"}},{"id":18,"name":"Q","description":"Q","active":true,"colors":{"bg":"#056625","border":"#03471a"}},{"id":19,"name":"R","description":"R","active":true,"colors":{"bg":"#00a329","border":"#038423"}},{"id":20,"name":"S","description":"S","active":true,"colors":{"bg":"#42d012","border":"#31a60a"}},{"id":21,"name":"T","description":"T","active":true,"colors":{"bg":"#a6ca15","border":"#78930c"}},{"id":22,"name":"U","description":"U","active":false,"colors":{"bg":"#d5d500","border":"#b7b703"}},{"id":23,"name":"V","description":"V","active":false,"colors":{"bg":"#e7bc12","border":"#c59f09"}},{"id":24,"name":"W","description":"W","active":false,"colors":{"bg":"#ffcc00","border":"#cda60a"}},{"id":25,"name":"X","description":"X","active":false,"colors":{"bg":"#ff9900","border":"#c57906"}},{"id":26,"name":"Y","description":"Y","active":false,"colors":{"bg":"#ff6633","border":"#b1411b"}},{"id":27,"name":"Z","description":"Z","active":false,"colors":{"bg":"#cc3300","border":"#802507"}},{"id":184,"name":"Z1","description":"Z1","active":false,"colors":{"bg":"#b32d00","border":"#802507"}},{"id":185,"name":"Z2","description":"Z2","active":false,"colors":{"bg":"#a42900","border":"#802507"}}],"is_default":true},{"collection_id":2,"parent_collection_id":45,"collection_name":"Spanish Translated Leveled Books","collection_image":"\/images\/mobile\/book_collection\/2.png","collection_svg":"\/images\/book_collection_icons\/2.svg","default_level":"R","child_collections":[],"sub_collections":[{"id":1,"name":"aa","description":"aa","active":false,"colors":{"bg":"#d81414","border":"#810a0a"}},{"id":2,"name":"A","description":"A","active":false,"colors":{"bg":"#f04d83","border":"#841137"}},{"id":3,"name":"B","description":"B","active":false,"colors":{"bg":"#c729a7","border":"#6d0d5a"}},{"id":4,"name":"C","description":"C","active":false,"colors":{"bg":"#8b1b66","border":"#460932"}},{"id":5,"name":"D","description":"D","active":false,"colors":{"bg":"#660066","border":"#310231"}},{"id":6,"name":"E","description":"E","active":false,"colors":{"bg":"#000066","border":"#01012a"}},{"id":7,"name":"F","description":"F","active":false,"colors":{"bg":"#1515af","border":"#090958"}},{"id":8,"name":"G","description":"G","active":false,"colors":{"bg":"#1e1ee5","border":"#0b0b8a"}},{"id":9,"name":"H","description":"H","active":false,"colors":{"bg":"#5353ee","border":"#1212b5"}},{"id":10,"name":"I","description":"I","active":false,"colors":{"bg":"#2f89e3","border":"#12579c"}},{"id":11,"name":"J","description":"J","active":false,"colors":{"bg":"#2ac0e5","border":"#198daa"}},{"id":12,"name":"K","description":"K","active":false,"colors":{"bg":"#1bdbdb","border":"#0fabab"}},{"id":13,"name":"L","description":"L","active":false,"colors":{"bg":"#1af1c6","border":"#10b594"}},{"id":14,"name":"M","description":"M","active":false,"colors":{"bg":"#1efaa2","border":"#3bcb91"}},{"id":15,"name":"N","description":"N","active":false,"colors":{"bg":"#00cc66","border":"#13824b"}},{"id":16,"name":"O","description":"O","active":true,"colors":{"bg":"#04934c","border":"#046334"}},{"id":17,"name":"P","description":"P","active":true,"colors":{"bg":"#009933","border":"#046524"}},{"id":18,"name":"Q","description":"Q","active":true,"colors":{"bg":"#056625","border":"#03471a"}},{"id":19,"name":"R","description":"R","active":true,"colors":{"bg":"#00a329","border":"#038423"}},{"id":20,"name":"S","description":"S","active":true,"colors":{"bg":"#42d012","border":"#31a60a"}},{"id":21,"name":"T","description":"T","active":true,"colors":{"bg":"#a6ca15","border":"#78930c"}},{"id":22,"name":"U","description":"U","active":false,"colors":{"bg":"#d5d500","border":"#b7b703"}},{"id":23,"name":"V","description":"V","active":false,"colors":{"bg":"#e7bc12","border":"#c59f09"}},{"id":24,"name":"W","description":"W","active":false,"colors":{"bg":"#ffcc00","border":"#cda60a"}},{"id":25,"name":"X","description":"X","active":false,"colors":{"bg":"#ff9900","border":"#c57906"}},{"id":26,"name":"Y","description":"Y","active":false,"colors":{"bg":"#ff6633","border":"#b1411b"}},{"id":27,"name":"Z","description":"Z","active":false,"colors":{"bg":"#cc3300","border":"#802507"}},{"id":184,"name":"Z1","description":"Z1","active":false,"colors":{"bg":"#b32d00","border":"#802507"}},{"id":185,"name":"Z2","description":"Z2","active":false,"colors":{"bg":"#a42900","border":"#802507"}}],"is_default":false},{"collection_id":11,"parent_collection_id":null,"collection_name":"Favorite Characters","collection_image":"\/images\/mobile\/book_collection\/11.png","collection_svg":"\/images\/book_collection_icons\/11.svg","default_level":"","child_collections":[],"sub_collections":[],"is_default":false},{"collection_id":8,"parent_collection_id":41,"collection_name":"Nursery Rhymes","collection_image":"\/images\/mobile\/book_collection\/8.png","collection_svg":"\/images\/book_collection_icons\/8.svg","default_level":"","child_collections":[],"sub_collections":[],"is_default":false},{"collection_id":4,"parent_collection_id":41,"collection_name":"Poetry Books","collection_image":"\/images\/mobile\/book_collection\/4.png","collection_svg":"\/images\/book_collection_icons\/4.svg","default_level":"","child_collections":[],"sub_collections":[],"is_default":false},{"collection_id":9,"parent_collection_id":41,"collection_name":"Song Books","collection_image":"\/images\/mobile\/book_collection\/9.png","collection_svg":"\/images\/book_collection_icons\/9.svg","default_level":"","child_collections":[],"sub_collections":[],"is_default":false}]);
+                guiConfigProvider.extend({"1":{"gui_config_id":"1","gui_config_area":"bookroom","is_enabled":"y"},"2":{"gui_config_id":"2","gui_config_area":"rocket","is_enabled":"y"},"3":{"gui_config_id":"3","gui_config_area":"avatar","is_enabled":"y"},"4":{"gui_config_id":"4","gui_config_area":"favorites","is_enabled":"n"},"5":{"gui_config_id":"5","gui_config_area":"writingOYOBuildABook","is_enabled":"y"},"6":{"gui_config_id":"6","gui_config_area":"writingOYOWriteYourWay","is_enabled":"y"},"7":{"gui_config_id":"7","gui_config_area":"writingOYOWritingWorkshop","is_enabled":"y"},"8":{"gui_config_id":"8","gui_config_area":"scienceLibrary","is_enabled":"y"},"9":{"gui_config_id":"9","gui_config_area":"scienceSpanish","is_enabled":"y"},"10":{"gui_config_id":"10","gui_config_area":"scienceInTheNews","is_enabled":"y"},"11":{"gui_config_id":"11","gui_config_area":"writingLibrary","is_enabled":"y"},"12":{"gui_config_id":"12","gui_config_area":"phonicsBookroom","is_enabled":"y"},"17":{"gui_config_id":"17","gui_config_area":"popular","is_enabled":"n"}});
+            }
+        ])
+        .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+            var bookroomStates = [];
+            bookroomStates.push({
+                name: 'home',
+                url: '/home',
+                component: 'bookroomHome'
+            });
+            bookroomStates.push({
+                name: 'topLevelCollection',
+                url: '/collectionId/{collectionId}',
+                component: 'topLevelCollection',
+                resolve: {
+                    collection: ['$stateParams', 'bookroomCollections',
+                        function($stateParams, bookroomCollections) {
+                            var collection = null;
+                            bookroomCollections.getCollectionData().some(function (currentCollection) {
+                                if (currentCollection.collection_id == $stateParams.collectionId) {
+                                    collection = currentCollection;
+                                    return true;
+                                }
+                            });
+                            return collection;
+                        }
+                    ]
+                }
+            });
+            bookroomStates.forEach(function (state) {
+                $stateProvider.state(state);
+            });
+            $urlRouterProvider.otherwise('/home');
+        }])
+        .constant('BuildTag', '--clt_18_03_011-1520366503')
+        .constant('Instance', 'prod')
+</script>
+<script type="text/javascript" src="Style/js/resource.module--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/resource.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/resource.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/resource-delivery.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/resource-delivery.component--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/resource-delivery-status.factory--clt_18_03_011-1520366503.js"></script>
+<script type="text/javascript" src="Style/js/resource-util--clt_18_03_011-1520366503.js"></script>
+<div id="content" ng-app="kids.bookroom" class="ng-scope" style="margin-top: 10%">
+    <div class="section collectionDisplay">
+
+        <div class="collectionDisplay_container" style="margin-left: 0%">
+            <a href="pages/chambre-lecture.html">
+                <div class="">
+                    <object type="image/svg+xml" data="Style/images/Lecture-logo.svg"></object>
+                </div>
+                <span>La Lecture</span>
+            </a>
+        </div>
+        <div class="collectionDisplay_container" style="margin-left: 10%">
+            <a href="#">
+                <div class="">
+                    <object type="image/svg+xml" data="Style/images/comptage-logo.svg"></object>
+                </div>
+                <span>Le Comptage</span>
+            </a>
+        </div>
+        <div class="collectionDisplay_container" style="margin-left: 10%">
+            <a href="#">
+                <div class="">
+                    <object type="image/svg+xml" data="Style/images/alphabet-logo.svg"></object>
+                </div>
+                <span>L'Alphabet</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div id="lightwindow_overlay" style="display: none; opacity: 0.8; background-image: url(&quot;/shared/img/lightwindow/black.png&quot;); background-repeat: repeat; height: 739px;"></div><div id="lightwindow" style="top: 369.5px; left: 707.5px;"><div id="lightwindow_container" style="height: 250px; width: 250px; left: -125px; top: -125px;"><div id="lightwindow_title_bar"><div id="lightwindow_title_bar_inner"><span id="lightwindow_title_bar_title"></span><a id="lightwindow_title_bar_close_link">close</a></div></div><div id="lazContainer"><div id="lightwindow_stage"><div id="lightwindow_contents" style="height: 250px; width: 250px;"></div><div id="lightwindow_navigation"><a href="https://www.kidsa-z.com/main/ReadingBookRoom#" id="lightwindow_previous"><span id="lightwindow_previous_title"></span></a><a href="https://www.kidsa-z.com/main/ReadingBookRoom#" id="lightwindow_next"><span id="lightwindow_next_title"></span></a><iframe name="lightwindow_navigation_shim" id="lightwindow_navigation_shim" src="javascript:false;" frameborder="0" scrolling="no" src="files/saved_resource.html"></iframe></div><div id="lightwindow_galleries"><div id="lightwindow_galleries_tab_container"><a href="https://www.kidsa-z.com/main/ReadingBookRoom#" id="lightwindow_galleries_tab"><span id="lightwindow_galleries_tab_span" class="up">Galleries</span></a></div><div id="lightwindow_galleries_list"></div></div></div><div id="lightwindow_data_slide"><div id="lightwindow_data_slide_inner"><div id="lightwindow_data_details"><div id="lightwindow_data_gallery_container"><span id="lightwindow_data_gallery_current"></span> of <span id="lightwindow_data_gallery_total"></span></div><div id="lightwindow_data_author_container">by <span id="lightwindow_data_author"></span></div></div><div id="lightwindow_data_caption"></div></div></div></div></div></div></body></html>

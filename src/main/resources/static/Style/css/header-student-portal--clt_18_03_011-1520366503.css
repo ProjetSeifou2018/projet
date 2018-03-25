@@ -1,0 +1,950 @@
+body {font-family: Verdana, Helvetica, Sans-serif; color: #000; }
+td {font-family: Verdana, Helvetica, Sans-serif; color: #000; }
+
+#header {
+        margin: 0;
+        background: #0d2c49;
+}
+
+#header input.inputfield {
+        width:100px;
+        height:20px;
+        font-size:10px;
+}
+
+#header input.button {
+        color:#1F60A9;
+        height:2em;
+        width: 60px;
+        margin:0;
+        font-size: 10px;
+        vertical-align: bottom;
+}
+
+#header span.bolded {
+        font-weight:bold;
+        font-size: 14px;
+        margin-right: 3px;
+}
+
+#header img {
+        margin: 0;
+        text-decoration: none;
+        border: none;
+}
+
+.rkLogo {
+	float: left;
+	margin-top: 49px;
+}
+
+.kazLogo {
+	position: absolute;
+	top: 6px;
+	left: 62px;
+	display: block;
+}
+
+.returnHome {
+	float: left;
+	background: url("/shared/images/readytest/home.png") no-repeat;
+	width: 121px;
+	height: 39px;
+	margin: 69px 20px 0 0;
+	text-decoration: none;
+	color: white;
+	font-family: chewy, verdana, arial;
+	text-align: center;
+	line-height: 39px;
+	font-size: 26px;
+	text-shadow: 0 2px rgba(28,78,110,.8);
+}
+
+.returnHome:hover {
+	background-position: 0 -39px;
+}
+
+.headerStatusWrap {
+	color: #fff;
+	cursor: default;
+	display: inline-block;
+	font-family: chewy, verdana, arial;
+	font-size: 36px;
+	left: 0;
+	line-height: 54px;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	white-space: nowrap;
+	width: 384px;
+	z-index: 4;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.headerStatusWrap div {
+	display: inline-block;	
+	height: 51px;
+	left: 0;
+	position: absolute;	
+	top: 0;
+	width: 100%;	
+	z-index: -1;	
+}
+
+.bgImgAssessment { 
+	background: url("/images/header_default/locationBookRoom.png") no-repeat;	
+}
+
+.bgImgAssignment {
+	background: url("/images/header_default/locationBookRoom.png") no-repeat;	
+}
+
+.bgImgAvatar { 
+	background: url("/images/header_default/locationAvatar.png") no-repeat;	
+}
+
+.bgImgBookRoom {
+	background: url("/images/header_default/locationBookRoom.png") no-repeat;		
+}
+
+.bgImgDashboard { 
+	background: url("/images/header_default/locationMyStats.png") no-repeat;	
+}
+
+.bgImgHeadsprout { 
+	background: url("/images/header_default/locationHeadsprout.png") no-repeat;	
+}
+
+.bgImgLevelUp {
+    background: url("/images/header_default/locationLevelUp.png") no-repeat;
+}
+
+.bgImgMessages { 
+	background: url("/images/header_default/locationMessages.png") no-repeat;	
+}
+
+.bgImgPortal { 
+	background: url("/images/header_default/locationHomeBg.png") no-repeat;
+}
+
+.bgImgReading { 
+	background: url("/images/header_default/locationReading.png") no-repeat;	
+}
+
+.bgImgRocket { 
+	background: url("/images/header_default/locationRocket.png") no-repeat;	
+}
+
+.bgImgScience{  
+	background: url("/images/header_default/locationScience.png") no-repeat;		
+}
+
+.bgImgScienceDrillDown { 
+	background: url("/images/header_default/locationScienceDrilldown.png") no-repeat;		
+}
+
+.bgImgStarZone { 
+	background: url("/images/header_default/locationStarZone.png") no-repeat;	
+}
+
+.bgImgWriting { 
+	background: url("/images/header_default/locationWriting.png") no-repeat;		
+}
+
+#header .bigwhite    {
+		color: #fff;
+		font-size: 22px;
+		font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 0;
+}
+
+.bigwhite    {
+		color: #fff;
+		font-size: 22px;
+		font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 0;
+}
+
+.biggold { color: #ffcc00; font-size: 1.3em; font-weight: bold;font-family: Verdana, Helvetica, Sans-serif; }
+.biggold a:link, .biggold a:visited {color: #ffffff; text-decoration: underline;}
+.biggold a:hover, .biggold a:active {color: #99ccff; text-decoration: none;}
+
+#topcornerstat{
+	width: 783px;
+	height: 35px;
+	background: no-repeat url(/images/corners/top_purp_stat.gif) transparent;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.level {
+	font-family: Verdana, Helvetica, Sans-serif; 
+	font-size: 26px; 
+	font-weight: bold; 
+	position: relative; 
+	color: white;
+	text-shadow: 0 1px #3c1766;
+	padding-top:30px;
+	text-align: left;
+}
+
+.level:before {
+	content:"";
+	width: 160px;
+	height: 35px;
+	background-color: #663398;
+	position: absolute;
+	z-index: -1;
+	margin-left: -30px;
+	box-shadow: 0 3px 2px rgba(0,0,0,0.4), inset 0 1px 1px #ac7ce5;
+}
+
+/*Cross-browser spacing problem, most likely due to the tables
+.level:after {
+	content:"";
+	display: block;
+	border-top: 30px solid #3c1766;
+	border-left: 20px solid transparent;
+	position: absolute;
+	z-index: -2;
+	left: -30px;
+}
+*/
+.sortmenu {font-size: .7em;}
+.sortmenu a:link, .sortmenu a:visited {color: #FF6600; text-decoration: underline;}
+.sortmenu a:hover, .sortmenu a:active {color: #FF6600; text-decoration: none;}
+
+readpage .image {border-style:outset; border-color: red; border-width:10px;}
+
+table.purplesection {position: relative; top: -7px;}
+td.progresslevels {position: relative; top: 13px;}
+#barstars {font-weight: bold; color: #ffffff; text-align:center; line-height: 1.80em; font-size: 1.1em;}
+#barprogress {width: 312px; font-weight: bold; color: #ffffff; text-align: center; line-height: 1.9em; font-size: 1.1em;}
+#progressgraph {width: 312px; text-align:left; height: 28px; border: 1px solid #000; background: url('/images/progress-bgrnd.gif');}
+
+
+.headerWrap {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 3;	
+}
+
+.portalPage .headerWrap {
+	position: absolute;
+}
+
+.header {	
+	background-image: url("/images/student_portal/topStretch.png");
+	background-repeat: repeat-x;	
+	height: 100px;
+	margin: 0 auto;
+	min-width: 960px;	
+	position: relative;
+}
+
+.portalPage .header {
+	background-image: none;	
+	max-width: 1600px;	
+}
+
+.portalPage .header:after {
+	width: 90%;	
+}
+
+.header:after {
+	background-image: url("/images/student_portal/topStretch.png");
+	background-repeat: repeat-x;	
+	content: "";	
+	display: none;		
+	height: 56px;
+	left: 50px;
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;	
+}
+
+.portalPage .header:after {
+	display: block;
+}
+
+.header:before {
+	background-image: url("/images/student_portal/glass.png");
+	background-repeat: repeat-x;	
+	content: "";		
+	display: block;
+	height: 46px;
+	left: 0;
+	position: absolute;
+	top: 56px;
+	width: 100%;	
+}
+
+.headerInner {
+	margin: 0 auto;
+	max-width: 1600px;
+	min-width: 960px;
+	position: relative;
+}
+
+.portalPage .header:before {
+	display: none;
+}
+
+#homeImage {
+    position: relative;
+    z-index: 1;
+}
+
+
+#headerAvatar #header-avatar-base {
+    left: 4px;	
+    position: absolute;
+    top: 22px;
+    z-index: 1;
+}
+#headerAvatar #header-avatar-head {
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+}
+#headerAvatar #header-avatar-eyes {
+    left: 13px;	
+    position: absolute;
+    top: 20px;
+    z-index: 6;
+}
+#headerAvatar #header-avatar-mouth {
+    left: 20px;	
+    position: absolute;
+    top: 45px;
+    z-index: 4;
+}
+#headerAvatar #header-avatar-body {
+    left: 15px;	
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+}
+#headerAvatar #header-avatar-arm {
+    left: -5px;	
+    position: absolute;
+    top: 55px;
+    z-index: 1;
+}
+#headerAvatar #header-avatar-legs {
+    left: 7px;	
+    position: absolute;
+    top: 92px;
+    z-index: 1;
+}
+#headerAvatar #header-avatar-ears {
+    left: -4px;	
+    position: absolute;
+    top: 21px;
+    z-index: 1;
+}
+#headerAvatar #header-avatar-hair {
+    left: -5px;	
+    position: absolute;
+    top: 38px;
+    z-index: 5;
+}
+#headerAvatar #header-avatar-hat {
+    left: -10px;	
+    position: absolute;
+    top: -58px;
+    z-index: 20;
+}
+.studentInner #html5InformationBar {
+    background-color: #663398;
+    border-radius: 8px 8px 0 0;	
+    clear: both;
+    height: 65px;
+    left: -5px;
+    margin: 0;
+    position: relative;
+    top: -20px;
+    width: 911px;  
+    z-index: 1; 
+}
+#progressBar #html5InformationBar {
+    background-color: rgb(102, 51, 153);
+    clear: both;	
+    height: 65px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+#purpleSlider {
+    left: 40px;	
+    position: absolute;
+    top: 12px;
+}
+#purpleSlider #sliderHandle {
+    background-color: rgb(63, 15, 110);
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .75);
+    cursor: pointer;
+    height: 20px; 
+    left: 7px;      
+    position: absolute; 
+    top: 0;
+    width: 30px;  
+}
+#purpleSlider #sliderContent {
+    position: absolute;
+    left: 7px;
+    top: -7px;
+    height: 60px;
+    width: 730px;
+    background-color: rgb(163, 164, 254);
+    border-radius: 10px 10px 0 0;
+}
+#rankContent {
+    position: absolute;
+    left: 80px;
+    top: 12px;
+}
+#rankContent #rankImage {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    height: 47px;
+    width: 72px;
+}
+#rankContent #rankText {
+    position: absolute;
+    padding: 4px;
+    left: 80px;
+    top: 0;
+    height: 45px;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#progressBarContent {
+    position: absolute;
+    left: 30%;
+    top: 10px;
+    height: 45px;
+    width: 40%;
+    text-align: center;
+}
+#progressBarContent #progressBarTitle {
+    display: inline-block;
+    font-weight: bold;
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: #fff;
+    width: 35em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+#progressBarContent #progressBar #currentLevel {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 22px;
+    clip: rect(0, 22px, 40px, 0);
+}
+#progressBarContent #progressBar #progressCanvas {
+    position: absolute;
+    left: 29px;
+    top: 18px;
+    background: #eeeeee;
+    border: 1px solid #000000;
+}
+#progressBarContent #progressBar #nextLevel {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 22px;
+    clip: rect(0, 22px, 40px, 0);
+}
+#spendableStarsContent {
+    position: absolute;
+    top: 15px;
+    right: 90px;
+}
+#spendableStarsContent #spendableStarsText {
+    position: absolute;
+    right: 45px;
+    text-align: right;
+    font-weight: bold;
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#spendableStarsContent #spendableStarsText #spendableStarsTextTotal,
+#sliderContentLifetimeStars #lifeTimeStarsText #lifeTimeStarsTotal {
+    font-size: 18px;
+    color: #fff;
+}
+#spendableStarsContent #mainStarAnimationCanvas {
+    position: absolute;
+    right: 0;
+}
+#sliderContentRank {
+    position: absolute;
+    padding: 2px;
+    left: 10px;
+    top: 12px;
+    height: 45px;
+    width: 200px;
+    text-align: left;
+    font-weight: bold;
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: rgb(0, 0, 153);
+}
+#sliderContentRank #nextRank {
+    color: #fff;
+}
+#sliderContentQuizRoomStats {
+    position: absolute;
+    left: 310px;
+    top: 10px;
+    height: 45px;
+    width: 325px;
+}
+#sliderContentQuizRoomStats .quizRoomStatsText {
+    font-weight: bold;
+    font-family: verdana, arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+#sliderContentQuizRoomStats #listenStats {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+#sliderContentQuizRoomStats #readStats {
+    position: absolute;
+    top: 0;
+    left: 105px;
+}
+#sliderContentQuizRoomStats #quizStats {
+    position: absolute;
+    top: 0;
+    left: 205px;
+}
+#sliderContentQuizRoomStats #slider-ico-listen {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 32px;
+}
+#sliderContentQuizRoomStats #slider-ico-read {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 32px;
+}
+#sliderContentQuizRoomStats #slider-ico-quiz {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    width: 27px;
+}
+#sliderContentLifetimeStars {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+#sliderContentLifetimeStars #lifeTimeStarsText {
+    position: absolute;
+    right: 45px;
+    text-align: right;
+    font-weight: bold;
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: rgb(0, 0, 153);
+}
+#sliderContentLifetimeStars #lifetimeStarCanvas {
+    position: absolute;
+    right: -20px;
+}
+
+.informationBar {
+    width: 860px;
+    height: 65px;
+    background-color: #663399;
+    margin: 0 auto;
+    padding-right: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+.shipTopLeft, .shipTopRight {
+	display: none;
+	width: 299px;
+	height: 106px;
+	position: absolute;
+}
+
+.portalPage .shipTopLeft, 
+.portalPage .shipTopRight {
+	display: block;
+}
+
+.shipTopLeft {
+	background-image: url("/images/student_portal/topLeft.png");
+	left: -59px;	
+}
+
+.shipTopRight {
+	background-image: url("/images/student_portal/topRight.png");
+	right: -59px;
+}
+
+.portalPage .headerFixedWidthWrapper { position: absolute; }
+
+.header img { border: none; }
+
+.header-star-display {
+    background: #DE8A16;
+    height: 32px; 
+    position: absolute;
+    top: 79px;
+    width: 96px;
+	z-index: 6; 
+	line-height: 32px;
+	color: #fff;
+	font-family: chewy, verdana, arial;
+	font-size: 20px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+
+.header-star-display:after {
+    content:"";
+    background: url("/images/student_portal/star-blank.svg") no-repeat;
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    width: 20px;
+}
+
+/*********************************/
+/*** banner across top of site ***/
+.announcement {
+    background: #fdf0de;
+    color: #555;
+    font-size: 12px;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.header-student-info {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	height: 70px;
+}
+
+.header-side3d {
+	position: absolute;
+	display: block;
+	width: 96px;
+	height: 40px;	
+	color: #fff;	
+}	
+
+.perspective {
+	height: 100%;	
+	perspective: 400px;
+	/* anti alias edges */
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');
+}
+
+.front {
+	transform: translateZ(20px);
+	padding-right: 10px;	
+}
+
+.back {
+	transform: rotateY(-180deg) translateZ(20px);
+}	
+
+.right {
+	transform: rotateY(90deg) translateZ(76px) translateX(-1px);
+	width: 40px;
+}
+
+.left {
+	transform: rotateY(-90deg) translateZ(20px);
+	width: 40px;
+}		
+
+.top {
+	transform: rotateX(90deg) translateZ(19px);
+}		
+
+.bottom {
+	transform: rotateX(-90deg) translateZ(20px);
+}		
+
+.header-star-display .header-side3d {
+	height: 32px;
+}
+
+.header-avatar-wrapper {
+	position: absolute;
+	top: 0;
+	right: 110px;
+	transform: rotateY(-23deg);
+	transform-style: preserve-3d;			
+}
+
+.header-avatar-wrapper:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 70px solid rgba(255,255,255,0.3);
+    border-right: 96px solid transparent;
+    position: absolute;
+}
+
+.header-avatar-wrapper .header-side3d {
+	width: 96px;
+	height: 80px;			
+}
+
+.header-avatar-wrapper .front {
+	transform: translateZ(0);		
+}				
+
+.header-avatar-wrapper .right {
+	transform: rotateY(90deg) translateZ(86px) translateX(10px);
+	width: 20px;
+	background: #177e96;		
+}	
+
+/*
+.header-avatar-wrapper .back {
+	transform: rotateY(-180deg) translateZ(20px);
+	background: blue;		
+}			
+
+.header-avatar-wrapper .left {
+	transform: rotateY(-90deg) translateZ(10px) translateX(-10px);
+	width: 20px;
+	background: purple;		
+}			
+
+.header-avatar-wrapper .top {
+	transform: rotateX(90deg) translateZ(10px) translateY(-10px);
+	height: 20px;
+	background: brown;		
+}	
+
+.header-avatar-wrapper .bottom {
+	transform: rotateX(-90deg) translateZ(70px) translateY(10px);
+	height: 20px;
+	background: violet;		
+}
+*/		
+		
+.header-star-display .right {
+	transform: rotateY(90deg) translateZ(86px) translateX(10px) translateY(-32px);
+	height: 32px;
+	background: #8c4216;			
+}	
+
+.avatar-display {
+    background: #13D5EB;	
+	height: 80px;
+    overflow: hidden;
+	position: absolute;
+	width: 96px;			
+}			
+
+.header-screen-name, 
+.header-logout-btn, 
+.header-parent-btn {
+	position: absolute;
+	right: 110px;
+	text-align: right;
+	color: #fff;
+	font-family: chewy, verdana, sans-serif;
+	font-size: 24px;
+	padding-right: 10px;
+	transform-origin: 100% 50%;
+	transition: transform .2s;		
+	transform-style: preserve-3d;
+}
+
+.header-screen-name {
+	line-height: 35px;		
+	height: 35px;		
+	width: 200px;
+	background: #2C90B4;
+	transform: rotateY(-23deg) translateZ(0);
+}
+
+.header-screen-name > div {
+    overflow: hidden;
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 180px;
+}
+
+.header-logout-btn, 
+.header-parent-btn {
+	text-decoration: none;	
+	line-height: 40px;
+	height: 40px;
+	width: 96px;		
+	right: 97px;	
+	display: block;	
+	transform: rotateY(-23deg) translateZ(-30px) translateX(-23px);		
+	transition-timing-function: ease-out;
+	-webkit-animation: header-btn-bounce .7s ease-out infinite;	
+	-webkit-animation-play-state: paused;
+	animation: header-btn-bounce .7s ease-out infinite;	
+	animation-play-state: paused;	
+}	
+
+@-webkit-keyframes header-btn-bounce {
+    0%, 100%  {transform: rotateY(-23deg) translate3d(-23px, 0, -30px);}
+    40%  {transform: rotateY(-35deg) translate3d(-23px, 0, 10px);}
+    50%  {transform: rotateY(-35deg) translate3d(-23px, 0, 10px);}
+} 
+
+@keyframes header-btn-bounce {
+    0%, 100%  {transform: rotateY(-23deg) translate3d(-23px, 0, -30px);}
+    40%  {transform: rotateY(-35deg) translate3d(-23px, 0, 10px);}
+    50%  {transform: rotateY(-35deg) translate3d(-23px, 0, 10px);}
+} 
+
+.header-logout-btn:hover,
+.header-parent-btn:hover {
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+}
+
+.header-logout-btn {
+	top: 74px;
+}
+
+.header-logout-btn .front {
+	background: #BA131B;
+}
+
+.header-logout-btn span,
+.header-parent-btn span {
+	transition: background .2s;
+}
+
+.header-logout-btn:hover  .front {
+	background: #ec5960;
+}
+
+.header-logout-btn .right {
+	background: #670c11;
+}
+
+.header-logout-btn:hover .right { 
+	background: #BA131B; 
+}
+
+.header-logout-btn .top {
+	background: #e03039;
+}
+
+.header-logout-btn:hover .top {
+	background: #f18f94;
+}
+
+/*
+.header-logout-btn:hover,
+.header-parent-btn:hover {
+	transform: rotateY(-30deg) translate3d(-23px, 0, 10px);
+}
+*/
+
+.header-parent-btn {
+	top: 35px;
+}
+
+.header-parent-btn .front {
+	background: #30A63C;
+}
+
+.header-parent-btn:hover .front {
+	background: #7cde86;
+}
+
+.header-parent-btn .right {
+	background: #175a29;
+}
+
+.header-parent-btn:hover .right {
+	background: #409657;
+}
+
+/* ie10 & 11 only */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.header-logout-btn, 
+	.header-parent-btn	{
+		right: 110px;
+	}	 
+	
+	.header-parent-btn:hover,
+	.header-logout-btn:hover {
+		transform: rotateY(-23deg) translate3d(-23px, 0, -30px);
+		animation-play-state: paused;		
+	}
+
+	.header-parent-btn:hover .front {
+		background: #7cde86;	
+	}		
+	
+	.header-logout-btn:hover .front {
+		background: #ec5960;	
+	}			
+}	
+
+.ie9 .header-logout-btn,
+.ie9 .header-parent-btn {
+	right: 110px;
+}
+
+.ie9 .header-star-display .right {
+    display: none;
+}
+
+/* Safari only */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { @media
+	{
+		.header-star-display {
+			transform-style: preserve-3d;
+		}
+	}
+}
